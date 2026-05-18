@@ -73,4 +73,4 @@ def rechercher_et_transcrire(requete, nombre_videos=3, langues=['fr', 'en']):
     print(f"Terminé ! Les résultats sont sauvegardés dans {nom_fichier}")
 
 if __name__ == "__main__":
-    rechercher_et_transcrire("league of legends", nombre_videos=5_0000)
+    rechercher_et_transcrire("league of legends build", nombre_videos=5_0000)
