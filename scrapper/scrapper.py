@@ -68,7 +68,7 @@ def rechercher_et_transcrire(requete, nombre_videos=3, langues=['fr', 'en']):
             print(f"  -> Échec sur {vid_id}. L'erreur exacte est : {type(e).__name__} - {e}\n")
         
 
-        time.sleep(60)
+        time.sleep(40)
 
     print(f"Terminé ! Les résultats sont sauvegardés dans {nom_fichier}")
 
