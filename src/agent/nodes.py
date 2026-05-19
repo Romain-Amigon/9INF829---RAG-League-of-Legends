@@ -20,31 +20,33 @@ class Nodes:
     async def routeur_initial(self, state: AgentState):
         question = state["messages"][0].content if hasattr(state["messages"][0], 'content') else str(state["messages"][0])
         
-        prompt = f"""Tu es un routeur logique pour un assistant de la Ville de Montréal.
-        Question de l'utilisateur : {question}
-        
-        Doit-on interroger une base de données de statistiques pour répondre ?
-        Les sujets de tes bases de données incluent : 
-        - Les requêtes 311 (nids-de-poule, déneigement, etc.)
-        - Les collisions routières (accidents, morts, blessés, etc.)
-        - La météo (neige, pluie, température, etc.)
-        
-        Si la question demande de compter ("combien"), de faire une moyenne, de comparer des dates, ou d'obtenir un chiffre précis sur ces sujets, réponds "OUI".
-        Si la question demande une définition, un règlement ou une explication générale (ex: "qu'est-ce qu'un accident grave ?"), réponds "NON".
-        Si la question ne concerne pas Montreal de façon explicite, donc une autre ville est nommé, réponds "NON".
-        
-        Réponds UNIQUEMENT par 'OUI' ou 'NON'."""
+        prompt = f"""You are a logic router for a League of Legends assistant.
+            User question: {question}
+            
+            Do we need to query a statistics database (Dataframes) to answer?
+            Your database topics include:
+            
+            - Base champion stats (health, damage, armor, range)
+            
+            - Item costs and stats
+            
+            - Win rates
+            
+            If the question asks to compare raw stats, provide the cost of an item, or find who has the longest range, answer "YES".
+            
+            If the question asks how to play a game phase, how to counter a champion (matchup), tips, or explanations, answer "NO".
+            
+            Answer ONLY with 'YES' or 'NO'."""
         
         reponse = await self.agent.llm.acomplete(prompt)
         texte = reponse.text.strip().upper()
         
-        trace = [f"--- ROUTEUR PROMPT ---\n{prompt}", f"--- ROUTEUR RÉPONSE ---\n{reponse.text}"]
+        trace = [f"--- ROUTER PROMPT ---\n{prompt}", f"--- ROUTER RESPONSE ---\n{reponse.text}"]
         
-        if "OUI" in texte:
+        if "YES" in texte:
             return {"next_step": "pandas_avec_rag", "reflexions": trace}
         else:
             return {"next_step": "rag_seul", "reflexions": trace}
-      
 
     async def recherche_lexique(self, state: AgentState):
         time.sleep(0.1)

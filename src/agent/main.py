@@ -38,98 +38,44 @@ import time
 
 # --- CONFIGURATION ET CHARGEMENT ---
 def setup_agent():
-    # Chargement des données
-    df_311 = pd.read_csv("../../data/raw/requetes_311.csv", low_memory=False)
-    df_coll = pd.read_csv("../../data/raw/collisions.csv")
-    df_meteo = pd.read_csv("../../data/raw/weather_montreal.csv")
-    df_metro = pd.read_csv("../../data/raw/stm.csv")
+    df_champions = pd.read_json("../../data/raw/champions_stats.json")
+    df_items = pd.read_json("../../data/raw/items_stats.json")
 
     llm = Groq(model="llama-3.1-8b-instant", temperature=0.0)
 
     instruction_stricte = """Output a SINGLE line of Python code using 'df'. 
     No 'df = ...', no markdown. Just the expression."""
 
-    # Moteurs
-    e_311 = PandasQueryEngine(df=df_311, llm=llm, instruction_str=instruction_stricte)
-    e_coll = PandasQueryEngine(df=df_coll, llm=llm, instruction_str=instruction_stricte)
-    e_meteo = PandasQueryEngine(df=df_meteo, llm=llm, instruction_str=instruction_stricte)
-    e_metro= PandasQueryEngine(df=df_metro, llm=llm, instruction_str=instruction_stricte)
+    e_champs = PandasQueryEngine(df=df_champions, llm=llm, instruction_str=instruction_stricte)
+    e_items = PandasQueryEngine(df=df_items, llm=llm, instruction_str=instruction_stricte)
 
-
-    engines = {"311": e_311, "coll": e_coll, "meteo": e_meteo, 'metro' : e_metro}
-    
+    engines = {"champions": e_champs, "items": e_items}
     
     tools = [
         QueryEngineTool(
-            query_engine=e_311, 
+            query_engine=e_champs, 
             metadata=ToolMetadata(
-                name="donnees_311",
-                description="""Contient les requêtes citoyennes envoyées au 311 à Montréal.
-                Colonnes clés : 
-                - ACTI_NOM : Nom de l'activité. Valeurs exactes à utiliser pour filtrer : 'Nid-de-poule', 'Déneigement', 'Supa-Achat'.
-                - DATE : Date de création de la demande (format 'YYYY-MM-DD').
-                - DERNIER_STATUT : Statut de la requête (ex: 'Terminée', 'Annulée').
-                - DATE_DERNIER_STATUT : date de la dernière mise à jour
-                - LOC_LONG, LOC_LAT : Coordonnées géographiques.
-                Utilise cet outil pour quantifier les problèmes signalés par les citoyens (notamment les nids-de-poule) ou analyser les délais de traitement via DATE_DERNIER_STATUT."""
-            )
-        ),
-
-        QueryEngineTool(
-            query_engine=e_coll,
-            metadata=ToolMetadata(
-                name="donnees_collisions", 
-                description="""Base de données des accidents et collisions routières à Montréal. 
-                IMPORTANT : 
-                    - Chaque ligne du DataFrame représente UN SEUL accident. 
-                    - Pour compter le nombre d'accidents, utilise len(df) ou .shape[0].
-                    - Ne sommez PAS NB_VICTIMES_TOTAL sauf si on demande spécifiquement le nombre de blessés.
-                Colonnes clés : 
-                - DATE: Date de l'accident (format 'YYYY-MM-DD'). Utilise cette colonne pour filtrer par année ou par mois.
-                - GRAVITE : Gravité de l'accident ('Dégâts matériels seulement', 'Léger', 'Grave', 'Mortel').
-                - NB_MORTS, NB_VICTIMES_TOTAL, NB_BLESSES_GRAVES : Nombre de victimes (Colonnes numériques).
-                - LOC_LAT, LOC_LONG : Coordonnées géographiques.
-                Utilise cet outil pour calculer des bilans de sécurité routière, identifier des zones accidentogènes ou comparer la mortalité entre différentes années."""
-            )
-        ),
-
-        QueryEngineTool(
-            query_engine=e_meteo,
-            metadata=ToolMetadata(
-                name="donnees_meteo",
-                description="""Historique météorologique quotidien de Montréal.
-                Colonnes clés :
-                - DATE : Date de l'observation (format 'YYYY-MM-DD'). Pivot central pour les jointures avec les autres outils.
-                - temperature_2m_max, temperature_2m_min : Températures extrêmes de la journée (°C).
-                - precipitation_sum : Quantité totale de pluie (en mm).
-                - snowfall_sum : Quantité totale de neige (en cm).
-                Utilise cet outil pour corréler les conditions climatiques (tempêtes de neige, verglas) avec le volume de requêtes 311 ou le nombre d'accidents de la route."""
+                name="donnees_champions",
+                description="Contient les statistiques de base de tous les champions (hp, armor, attackdamage, attackrange, movespeed). Utilise cet outil pour comparer les statistiques de départ ou vérifier les portées d'attaque."
             )
         ),
         QueryEngineTool(
-            query_engine=e_metro,
+            query_engine=e_items,
             metadata=ToolMetadata(
-                name="donnees_transports_en_communs_et_metro",
-                description="""données des emplacements des stations de métro
-                Colonnes clés :
-                - stop_name : nom de la station
-                - LOC_LAT, LOC_LONG : Coordonnées géographiques.
-                Utilise cet outil pour retrouver les stations de métro impactant le volume de requêtes 311 ou le nombre d'accidents de la route.
-                Les données n'ont pas de dates associées, uniquement les coordonnées géogrpahiques, utilise la fonction  filtrer_proches pour retrouver les points proches des stations"""
+                name="donnees_objets", 
+                description="Contient le coût en gold et les statistiques apportées par les objets du jeu. Utilise cet outil pour trouver le prix d'un item ou ce qu'il apporte."
             )
         )
-    
     ]
 
     return ReActAgent(
-        name="agent_donnees",
-        description="Agent strict pour extraire des statistiques sur la mobilité.",
+        name="agent_lol",
+        description="Agent strict pour extraire des statistiques de League of Legends.",
         system_prompt="Tu es un analyste de données strict. Tu utilises tes outils un par un. Ne génère JAMAIS de texte à trous. Attends le retour numérique de l'outil avant de formuler ta réponse finale.",
         tools=tools,
         llm=llm,
         max_iterations=3
     ), engines
-
 
 # --- LOGIQUE D'ÉVALUATION ---
 async def run_benchmarks(app):
