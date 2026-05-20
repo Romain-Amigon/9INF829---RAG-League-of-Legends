@@ -1,0 +1,14 @@
+Title: ZED in 2 MINUTES! Zed Guide, Combos, Runes & Build 💥
+URL: https://www.youtube.com/watch?v=Ln5aIzb_LOQ
+
+Content:
+Zed in two minutes Passive: contempt for the weak Zed's basic attacks against targets below 50% health deal bonus magic damage First skill: razor 
+shuriken Zed throws a shuriken, dealing more damage to the first enemy it hits Second skill:
+living shadow Passive: When Zed and his shadow strike an enemy with the same ability, he restores energy. Active: Zed sends a shadow forward that mimics his abilities. He can reactivate the skill to swap places with this shadow If you move too far away from the shadow, you won't be able to 
+swap with it Third skill: shadow slash Zed and his shadows create a slash, slowing and dealing 
+damage to nearby enemies Each enemy hit by Zed's slash reduces the cooldown of living shadow. You can cancel the auto attack animation by using this skill right after an auto attack This is very useful, so try to do it whenever you can. Ultimate: death mark Zed becomes unargetable and dashes to 
+an enemy champion, marking them. After 3 seconds, the mark detonates, dealing a percentage of all 
+damage Zed dealt to the target while the mark was active He leaves a shadow behind at his starting 
+location, which he can return to by reactivating the ultimate This shadow has no maximum range 
+for returning, meaning you can be on the other side of the map and still be able to go back to it Combos Poke combo: second skill + third + first skill Surprise attack: second skill + third + first skill +  auto-attack + ultimate After that use more auto attack to finish the target, depending on the 
+situation Safe escape: Place your second skill in a safe location for an escape route Then use your ultimate + third + first skill + auto-attack if possible. Finally, reactivate your second skill to escape range combo ultimate + ultimate + second skill + third + first skill These are the builds and runes I usually run on Zed

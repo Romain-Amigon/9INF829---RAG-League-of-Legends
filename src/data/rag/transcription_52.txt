@@ -1,0 +1,5 @@
+Title: Updated Summoner Spell: Smite
+URL: https://www.youtube.com/watch?v=L-hGAAx3izw
+
+Content:
+we're updating the Smite Summoner spell first we're removing challenging Smite or red Smite we found that it really wasn't a compelling choice for Jungle players and it was often hard to appreciate its effect in game next we're changing how the Smite upgrade functions originally you had to kill a specific amount of monsters to upgrade your Smite starting this patch Smite will upgrade based on the number of times it has been used so the upgrade time should be more consistent across games additionally both base Smite and the upgraded Smite will deal a fixed amount of damage to monsters instead of scaling based on your Champion levels lastly we're adjusting the general stats and behavior of jungle monsters this should help make clear times faster overall and you should have an easier time surviving against Monsters especially in the early clears because at the end of the day we want junglers to be planning their next steps without worrying so much about surviving their initial clears

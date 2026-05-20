@@ -1,0 +1,516 @@
+Title: Inspiration Runes in LoL: Complete Analysis, Gold Value, and Use Cases
+URL: https://www.youtube.com/watch?v=QCvMvQVqv7o
+
+Content:
+Bonjour à toutes et à tous, et 
+bienvenue dans cette vidéo dédiée   au theorycrafting sur League of Legends.
+Aujourd’hui, on va se pencher sur l’arbre   d’Inspiration. Ce sera une vidéo 
+d’analyse complète, qui couvrira   tout ce que vous avez à savoir sur ces runes.
+Bien sûr, il serait impossible de passer champion   par champion, vous vous en doutez. On va donc 
+raisonner à partir de situations générales,   afin que vous puissiez ensuite adapter tout ça à 
+votre propre style de jeu. Comme toujours, le but   de ces vidéos, c’est de vous rendre autonomes.
+Mais avant de commencer, il faut qu’on parle   de la manière dont on va quantifier la 
+valeur des runes. En theorycrafting,   la méthode la plus efficace consiste à leur 
+attribuer une valeur en gold quand c’est possible.   Ça permet de les comparer à des 
+composants, à des objets complets,   ou à d’autres éléments eux aussi quantifiables. 
+Et quand ce n’est pas possible, alors on essaiera   d’évaluer la rune autrement, à partir de ses 
+capacités propres et d’exemples concrets.  Enfin, vous aurez une partie à la fin 
+de la vidéo pour vous montrer comment   j’applique tous les concepts qu’on 
+aura vus ici sur certains champions.  Le but de cette partie, ce sera de poser 
+les règles qu’on utilisera ensuite dans la   mise en situation. Cette partie pourra 
+vous paraître évidente par moments,   mais poser clairement les prérequis de chaque rune 
+aide énormément à bien les comprendre, et vous   allez le voir au fil de la vidéo.
+Commençons donc par les runes principales.  La rune Optimisation glacial, ou 
+Glacial Augment, a l’effet suivant :  Passif : Immobiliser un champion ennemi 
+fait émaner depuis lui 3 rayons glaciaires   en direction de vous et des autres champions 
+ennemis proches, créant des zones glacées d’un   rayon de 700 unités qui durent 3 secondes (+ 
+100% de la durée de l’effet d’immobilisation).  Les ennemis à l’intérieur des zones glacées, 
+qui ont une largeur de 80 unités, ou plus,   sont ralentis de 20% (+ 7% par tranche de 100 
+AD bonus) (+ 6% par tranche de 100 AP) (+ 9%   par tranche de 10% de puissance de soins et 
+boucliers) et voient leurs dégâts réduits de   15% contre vos alliés, vous-même exclu.
+Ça a un cooldown de 25 secondes.  Bon. Quelles sont les forces de cette rune ?
+• Une immense zone,   dont la durée dépend de celle du contrôle.
+• Un ralentissement, dont la puissance dépend de   votre AD, de votre AP et de votre Healing Power.
+• Une réduction de dégâts en zone.  Maintenant, la vraie question, c’est comment 
+l’optimiser au maximum ? C’est assez simple.   Il faut regarder les critères suivants. 
+Si vous cochez toutes les cases, alors la   rune a de bonnes chances d’être très correcte :
+• Vous disposez d’un contrôle de foule très long.  • Vous disposez d’une grande quantité 
+d’AD, d’AP ou de Healing Power.  Si vous remplissez ces deux critères, alors votre 
+champion peut exploiter cette rune correctement.  Ici, c’est impossible de quantifier quoi que 
+ce soit en gold. La puissance de cette rune   dépend entièrement de ce que vous faites du 
+ralentissement et de la réduction de dégâts.  Naturellement, un champion comme Thresh vous 
+vient sans doute à l’esprit. Mais méfiez-vous,   si vous utilisez régulièrement votre ultime, 
+et bien entendu si vous arrivez à le toucher,   alors le ralentissement de Glacial n’a 
+plus vraiment de valeur, car dans League   of Legends seul le ralentissement le plus 
+puissant s’applique. Donc même si son CC   est relativement long, la rune peut ne pas 
+être toujours aussi utile qu’elle en a l’air.  Même logique avec Alistar. Son 
+Z applique 0,75 seconde de CC,   donc Glacial reste actif 3,75 secondes, 
+et pas plus. C’est assez peu. Votre Q,   lui, dure 1 seconde, ce qui 
+n’est pas beaucoup mieux.  Malgré tout, vous pouvez quand même 
+correctement utiliser Glacial. Certes,   le ralentissement est utile, mais la 
+réduction de dégâts l’est tout autant.  Simplement, ce sont des critères que vous devez 
+garder en tête dans votre choix, notamment à cause   de la concurrence qui peut remplacer Glacial selon 
+votre gameplay sur Thresh ou Alistar, même si ce   sont des utilisateurs populaires de la rune.
+Maintenant, si vous voulez mon avis, bien   utilisée, c’est probablement l’une des meilleures 
+runes du jeu entier. Mettez ces 15% de réduction   de dégâts sur un carry, et la rune dépasse très 
+largement la concurrence, même si elle reste   difficile à utiliser de façon optimale.
+Passons maintenant à Grimoire ultime,   ou Unsealed Spellbook :
+Passif : Lorsque vous n’êtes   pas en train de canaliser Téléportation et que 
+vous êtes hors combat depuis 5 secondes, vous   pouvez remplacer l’un de vos sorts d’invocateur 
+équipés par un nouveau sort d’invocateur à usage   unique. Vous ne pouvez pas sélectionner un 
+sort d’invocateur que vous avez déjà équipé.  Votre premier échange devient disponible à 6 
+minutes. Les échanges ont un délai de récupération   initial de 270 secondes ; sélectionner un 
+sort d’invocateur unique réduit ce délai   de 25 secondes. Vous devez échanger vers 3 sorts 
+d’invocateur différents avant de pouvoir revenir   à l’un de ceux que vous avez déjà utilisés.
+Sélectionner un sort d’invocateur lui applique   un délai de récupération de 5 secondes. 
+Utiliser un sort d’invocateur sélectionné   place ce sort, dans le même emplacement, 
+en récupération pendant 10 secondes.  Ça a un cooldown de 245 à 120 secondes, 
+selon le nombre d’échanges uniques.  Alors lui, c’est de très loin le plus 
+complexe. C’est une rune assez exceptionnelle,   dans le sens où, même en theorycrafting, 
+personne ne sait vraiment ce qu’elle vaut.   Sa puissance ne vient pas d’elle-même, mais des 
+sorts d’invocateur qu’elle vous donne accès.  C’est la rune la plus universelle du jeu. 
+Si vous avez un doute sur quoi prendre,   le Grimoire ne peut jamais être un mauvais choix.
+Un Embrasement, par exemple, applique Hémorragie   et inflige entre 70 et 525 
+dégâts bruts, c’est énorme.  Il y a aussi toute l’utilité 
+d’une Purge, d’une Téléportation.  La puissance d’une Fatigue, etc.
+Donc, exceptionnellement, il n’y a pas   vraiment de condition d’utilisation à poser 
+ici. Vous êtes libre de la choisir ou non.  Sachez simplement qu’en pratique, 
+elle reste globalement faible. Non   pas à cause de la puissance des sorts 
+d’invocateur, mais à cause du cooldown.  Là où Glacial se recharge en 25 
+secondes, ici on parle de 245 à 120   secondes. C’est ça qui freine vraiment la rune.
+Si vous arrivez à jouer autour de ce cooldown,   par exemple sur un champion comme Nocturne, 
+Fiddlesticks ou un autre qui a des périodes   faibles bien marquées, ça peut aider.
+Mais dans la majorité des cas, les   champions ont de meilleurs choix, et n’arrivent 
+pas à exploiter Grimoire à son plein potentiel.  La meilleure chose à faire ici, c’est tout 
+simplement de tester par vous-même. Sur   le papier, c’est très difficile de vraiment 
+se rendre compte de ce que vaut cette rune,   donc je vous encourage à voir directement 
+en partie ce qu’elle vous apporte.  Voyons maintenant Premier coup, ou First Strike :
+Passif : Engager le combat contre un champion   ennemi dans les 0,25 premières secondes 
+du combat entre champions vous octroie 10   gold et Premier Coup pendant 3 secondes, ce 
+qui fait que tous vos dégâts post-mitigation   infligés aux champions infligent 7% de dégâts 
+bruts bonus. Ensuite, vous gagnez des gold   égales à (mêlée 50% / distance 35%) de tous 
+les dégâts bonus infligés pendant la durée.  Premier Coup est mis en récupération complète 
+sans activer ses effets si un champion ennemi   vous touche avant que vous ne le touchiez.
+Ça a un cooldown de 25 à 15 secondes,   selon le niveau.
+Les forces de cette rune sont claires :  • Une forme de génération de gold.
+• Des dégâts supplémentaires.  Quels sont donc les critères pour l’utiliser ?
+• Il faut infliger de lourds dégâts   pendant la fenêtre de 3 secondes.
+• Il faut pouvoir mettre le premier coup.  • Être mêlée vous donne des gold en plus.
+Ici, c’est déjà plus simple à quantifier,   puisque les golds sont directement 
+donnés par la rune elle-même. Admettons que vous arriviez à infliger 4000 
+dégâts dans cette fenêtre de 3 secondes,   sur un Malphite AP mid par exemple, qui est 
+assez populaire avec cette rune. Vous obtenez   alors 150 gold, avec 280 dégâts bonus…
+Et honnêtement, c’est très peu. Certes,   c’est la moitié d’un kill, mais ça demande 
+à la fois de réussir à prendre la fenêtre   et de mettre le premier coup, ce qui peut 
+être difficile dans beaucoup de scénarios.  Cette rune était bien plus puissante avant, 
+et Riot Games, en se rendant compte qu’ils   n’arriveraient jamais à l’équilibrer 
+proprement, ont préféré la rendre faible.  L’avantage, en revanche, c’est que si 
+vous arrivez à l’utiliser à la perfection,   que ce soit grâce à votre champion ou à votre 
+gameplay, vous aurez quand même une option solide.   Les golds restent bien entendu très puissants, et 
+par le biais de Premier Coup vous pourrez acheter   des statistiques qui, elles, viendront compenser 
+les dégâts ou la résistance manquants de la rune.  Mon avis, c’est qu’elle est légèrement 
+trop volatile pour être réellement   constante. Il suffit d’un Z de Morgana 
+mal placé, ou d’un ultime de Karthus,   et c’est comme si vous n’aviez plus de 
+rune pendant une bonne partie du combat.  Si vous pouvez l’utiliser de façon régulière 
+sur un champion qui inflige très vite de lourds   dégâts, alors oui, ça reste une bonne rune. Mais 
+sa difficulté d’utilisation fait que je ne peux   pas vous la conseiller à moins que vous soyez 
+certain de pouvoir l’exploiter correctement.  Très bien, nous en avons fini avec les runes 
+principales. Voyons maintenant les secondaires,   en commençant par le Flash Hextech.
+Passif : Tant que Flash a un cooldown   restant supérieur à 2 secondes, 
+il est remplacé par Hexflash.  Actif : Vous commencez à charger pendant 
+un maximum de 2 secondes, ce qui fixe votre   vitesse de déplacement à 0 et augmente la portée 
+d’Hexflash au fil de la canalisation. Après au   moins 1 seconde, vous pouvez réactiver le 
+sort ; cela se fait automatiquement lorsque   la charge se termine si vous ne le réactivez 
+pas avant. Relâcher la charge avant 1 seconde   ou entrer en combat contre un champion ennemi 
+met Hexflash en cooldown pendant 10 secondes.  Réactivation : Vous vous téléportez à 
+l’emplacement ciblé à portée et gagnez   50% de vitesse de déplacement bonus 
+pendant un maximum de 0,25 seconde.  Hexflash utilise le lancement rapide par défaut, 
+ce qui oblige à maintenir l’Actif puis à relâcher   pour déclencher la Réactivation.
+Ça a un cooldown de 20 secondes.  La portée va de 200 à 400 
+selon le temps de canalisation.  Alors, lui, c’est un gros morceau, très 
+apprécié par les joueurs de supports   engage comme Alistar ou Rell par exemple.
+Factuellement, vous le savez tous, Flash est de   très loin le sort d’invocateur le plus puissant. 
+Mais vous savez aussi que sa force vient du fait   qu’il peut être activé instantanément, 
+exactement quand vous le souhaitez.  Ici, cette force est remplacée par la possibilité 
+de faire quelque chose de similaire toutes les 20   secondes au lieu de 300, mais avec une contrainte 
+minimale de 1 seconde, ou 2 si vous voulez   atteindre la portée complète d’un Flash.
+Dit comme ça, ce n’est pas si mauvais,   non ? Eh bien, ça dépend. Pour un Alistar, 
+non. Pour un Kennen, oui. Et au final,   ça dépend entièrement de vous.
+Cette rune est le substitut parfait   du sort d’invocateur le plus puissant. Et par 
+conséquent, si elle est correctement utilisée,   elle peut être vraiment monstrueuse. N’importe 
+qui peut décider de l’utiliser, un Garen qui   veut gagner de la portée en sortant d’un bush ? 
+Pourquoi pas. Un mage mid qui cherche à surprendre   son adversaire à travers un mur ? Pareil.
+Sa puissance dépend entièrement de vous   et de votre imagination. S’il y a bien 
+une rune que je vous conseille d’essayer   par vous-même, c’est clairement celle-ci.
+Mon avis, c’est qu’elle dépend énormément d’un   style de jeu particulier, en dehors des champions 
+qui la prennent naturellement comme Alistar. Parce   que prendre cette rune, c’est aussi renoncer à une 
+autre, et il faut vraiment avoir conscience de ce   que vous investissez dans Flash Hextech.
+Voyons maintenant la rune des Chaussures   magiques, ou Magical Footwear :
+Passif : Après 12 minutes (réduit   de 45 secondes chaque fois que vous participez à 
+l’élimination d’un champion ennemi), vous obtenez   gratuitement des Bottes légèrement magiques. 
+Les Bottes légèrement magiques sont identiques   aux Bottes et peuvent être améliorées comme si 
+c’était cet objet. Si votre inventaire est plein   au moment de les recevoir, elles apparaîtront 
+dès qu’un emplacement sera disponible.  En plus, vos bottes accordent 10 de vitesse 
+de déplacement bonus supplémentaire.  Vous ne pouvez pas acheter les Bottes ni aucune 
+botte de palier 2 avant d’avoir obtenu les   Bottes légèrement magiques.
+Alors là, c’est parfait,   on peut connaître précisément sa 
+valeur. Elle vaut exactement 420 gold.  Bon, entre nous, 420 gold, ce n’est pas 
+énorme. Des runes plus puissantes offrent   de bien meilleurs choix que Chaussures magiques. 
+Mais la vraie question, c’est à quel moment ? La majorité des runes donnent de la puissance 
+plutôt en fin de partie. C’est assez rare d’en   avoir de vraiment impactantes très tôt, 
+on peut citer Plaque d’Os par exemple.  Et ici, typiquement, un mid qui a un peu 
+d’avance peut soudain recevoir 420 gold de   valeur avant son deuxième objet, et profiter 
+immédiatement de l’avantage de la rune.  La vraie force de cette rune est là, un 
+boost de statistiques assez tôt dans la   partie. Il ne faut pas l’interpréter autrement.
+Certes, les 10 de vitesse de déplacement sont   vraiment bien, mais ce n’est pas une statistique 
+rare. Tous les types de champions peuvent y   investir. Donc le plus simple reste de 
+considérer directement sa valeur en gold.  Autrement dit, si vous ne cherchez pas un 
+bonus de gold tôt dans la partie au prix   d’une rune potentiellement plus forte plus tard, 
+alors Chaussures magiques n’est pas pour vous.  Mon avis, c’est qu’elle se fait assez largement 
+dépasser par la rune qu’on va voir juste après,   et personnellement je la prends rarement. Sur 
+Fizz, par exemple, c’est une option correcte   si vous cherchez un powerspike dès le 
+premier objet, mais en dehors de ça,   elle reste globalement assez faible trop tôt.
+Passons maintenant à Remise immédiate,   ou Cash Back :
+Passif : Lorsque   vous achetez un objet légendaire, 7,5% de son coût 
+total en gold vous est automatiquement remboursé.  Vendre l’objet ou annuler son achat annule 
+ce remboursement, ce qui réduit vos gold   actuels d’un montant égal à la somme remboursée.
+Cette rune, elle aussi, est quantifiable en gold.   Si on part du principe qu’il faut au 
+moins égaler Chaussures magiques, alors   il faut investir 5600 gold, soit à peu près deux 
+objets légendaires. Les bottes ne comptent pas.  À partir de là, la rune ne 
+fait que devenir plus forte.  Vous allez peut-être me dire que certaines 
+parties ne dépassent pas forcément les   deux objets. Et moi je vous répondrai que, 
+statistiquement, c’est peu probable qu’elles se   terminent avant, surtout dans les elos plus bas.
+Ici, l’argument central, c’est surtout, à quel   moment avez-vous besoin de cette puissance ?
+Par exemple, si vous jouez un build mage burn   avec Malzahar, vous visez trois objets. Dans 
+ce cas, Remise immédiate devient beaucoup plus   intéressante que Chaussures magiques. 
+En revanche, si vous jouez Fizz et que   vous cherchez à snowball très vite, alors 
+Remise immédiate arrive un peu trop tard.  La vraie question est donc la suivante, est-ce 
+que Chaussures magiques peut vous donner un   avantage de début de partie suffisamment 
+fort pour dépasser Remise immédiate ?  Mon avis, c’est que très souvent non. 
+Vous ne pouvez pas savoir à l’avance si   cet avantage sera réellement pris ni si vous 
+arriverez à saisir l’occasion à chaque partie.   Remise immédiate, elle, vous donne sa 
+puissance sans aucune condition, et c’est   là toute la différence entre les deux runes.
+Par conséquent, je vous conseille en général   de prendre Remise immédiate à la place des 
+Chaussures magiques dans le doute. En revanche,   si vous êtes vraiment certain de votre 
+coup, alors les Chaussures peuvent très   bien soutenir votre début de partie efficacement.
+Très bien, nous en avons fini avec celles-là.   Passons aux suivantes avec Triple tonique.
+Passif : Vous obtenez un Élixir en atteignant   chacun des niveaux suivants :
+• Niveau 3 : Élixir d’avarice  • Niveau 6 : Élixir de force
+• Niveau 9 : Élixir de compétence  Si votre inventaire est plein lorsque vous 
+devenez éligible à recevoir l’Élixir d’avarice   ou l’Élixir de force, chaque objet vous sera 
+accordé dès qu’un emplacement se libère. Si   votre inventaire est plein lorsque vous devenez 
+éligible à recevoir l’Élixir de compétence,   l’objet est consommé automatiquement.
+Pour ce qui est des effets des élixirs :  • Élixir d’avarice : Vous infligez 5 
+dégâts bruts bonus à l’impact contre   les sbires pendant 60 secondes. De plus, à 
+l’expiration de l’effet, vous gagnez 60 gold.  • Élixir de force : Vous gagnez 15 d’AD bonus ou 
+25 d’AP bonus (adaptatif) pendant 60 secondes.  • Élixir de compétence : Vous 
+gagnez 1 point de compétence.  Alors lui, c’est un cas hybride. Prenons-les un 
+par un, en commençant par l’Élixir d’avarice.  Ces 5 dégâts bruts à l’impact sont 
+dérisoires. Ça aide à last hit,   mais ça aide très peu à push sur la majorité 
+des champions. Éventuellement Yunara, et encore.  Les 60 gold, eux, sont corrects. 
+C’est l’équivalent d’un sbire   canon dans une partie déjà avancée.
+Mais pour l’instant, l’impact est   trop faible. Passons donc à l’Élixir de force.
+Là, c’est tout de suite bien plus intéressant.   Il offre soit 525 gold d’AD, soit 
+500 gold d’AP pendant une minute.  Et vous savez sans doute qu’un tel écart de gold 
+peut complètement changer un combat. Un champion   qui part déjà avec un kill d’avance, c’est 
+beaucoup, là, on est presque à deux. Et en plus,   ça arrive au niveau 6, soit le moment le 
+plus important pour énormément de champions.  Très clairement, c’est pour cet élixir-là qu’on 
+prend Triple tonique. Un écart de puissance   aussi fort, aussi tôt, peut très facilement vous 
+permettre de prendre un kill. Et pas seulement   pour les golds, aussi pour tout l’avantage 
+global qu’apporte le fait de tuer votre opposant.   À ce stade, ça met clairement cette rune devant 
+beaucoup d’autres runes secondaires de l’arbre.  Le problème, c’est le si.
+Si vous n’arrivez pas à trade,   ou à tuer. Pire encore, si ça vous pousse à 
+forcer un combat que vous perdez et dans lequel   vous mourez, alors la rune devient catastrophique.
+C’est du pur double tranchant. Bien utilisée, elle   est très forte. Mal utilisée, c’est un poison.
+Avant de conclure, voyons aussi l’Élixir   de compétence. Et là, bien entendu, 
+tout dépend énormément du champion.  Bien sûr, avoir un point de compétence 
+supplémentaire, c’est toujours très   bien. Certains champions aiment énormément 
+pouvoir monter deux compétences rapidement.  Mais ça dépend trop du cas précis, donc 
+de ce que vous allez réellement en faire.  Renseignez-vous si votre champion a deux 
+compétences assez puissantes à max, certaines sont   vraiment extrêmement faibles, comme le E de Sona.
+Alors, conclusion sur cette rune ? Sa puissance   dépend surtout de l’Élixir de force. Si vous 
+arrivez à l’utiliser pour tuer votre opposant au   niveau 6, alors c’est l’une des meilleures runes 
+secondaires du jeu. L’Élixir de compétence est   plutôt puissant, mais trop dépendant du champion. 
+Et l’Élixir d’avarice, lui, reste oubliable.  Mon avis, c’est que cette rune ne devrait pas être 
+prise. C’est trop volatil de tout miser sur un   kill au niveau 6. Si vous ratez votre fenêtre, 
+la rune devient inférieure aux autres choix,   et dans League of Legends, la constance est 
+capitale. Si votre objectif est de monter en   classé, par exemple, ce n’est pas seulement 
+la partie où ça a marché qui compte, mais   aussi toutes celles où ça a complètement raté.
+Une rune un peu plus faible, mais qui fonctionne   à 100% du temps, sera meilleure qu’une rune plus 
+forte qui ne fonctionne qu’une partie du temps.  Passons maintenant au Filtre de 
+chronodistorsion, ou Time Warp Tonic :  Passif : Lorsque vous consommez une potion 
+(Potion de soin ou Potion rechargeable),   vous récupérez en plus des HP égaux 
+à 40% du soin total qu’elle restaure.  Si une potion de soin est consommée 
+alors qu’une autre est déjà active,   cet effet se déclenchera lors de l’activation 
+de la potion suivante, une fois la restauration   de la potion actuelle terminée.
+Alors, cette rune est intéressante   parce qu’elle est quantifiable, 
+avec en plus un énorme point bonus.  Déjà, comme elle augmente de 40% l’efficacité des 
+potions, elle augmente aussi leur valeur de 40%,   puisque les potions ne font que ça.
+Sur les potions de base, ça ne   représente pas grand-chose. Mais les potions 
+rechargeables ont déjà une énorme valeur, donc   c’est un excellent point pour la tenue de lane.
+Et bien sûr, le point central ici, c’est que ce   soin bonus est instantané. Une potion normale rend 
+48 HP en instantané grâce à la rune, et une potion   rechargeable 40. Ça peut vraiment surprendre 
+votre opposant et faire la différence. Parfois,   un combat se joue à une auto-attaque près, et ce 
+genre d’écart suffit à faire pencher la balance.  Cela dit, on parle quand même de 40 ou 
+48 HP. On est loin d’une Plaque d’Os,   encore une fois. Mais ici, c’est extrêmement 
+simple à utiliser, et la rune atteint sa   puissance maximale dès le niveau 1.
+Avec ça en tête, vous comprenez qu’en   début de partie, particulièrement avec les potions 
+rechargeables, vous avez une énorme tenue de lane.  Si vous voulez mon avis, c’est l’une des 
+meilleures runes par défaut. Il est très   rare dans une partie de ne pas prendre 
+de potion rechargeable, et je vous invite   d’ailleurs à regarder pourquoi dans ce short.
+De ce fait, cette rune est probablement une   meilleure alternative à Jeu de jambes, 
+qui vise elle aussi la régénération,   avec bien sûr la vitesse de déplacement en plus.
+En gros, si vous savez que vous allez prendre   des potions, cette rune peut vraiment 
+énormément aider votre début de partie.   Gardez simplement en tête qu’elle ne 
+sert plus à grand-chose en fin de partie.  Voyons maintenant Livraison de 
+biscuits, ou Biscuit Delivery :  Passif : Vous recevez un Biscuit de 
+volonté éternelle à 2, 4 et 6 minutes.   Si votre inventaire est plein au moment 
+de recevoir un biscuit, le ou les biscuits   apparaîtront dès qu’un emplacement se libère.
+Consommer un Biscuit augmente définitivement   vos HP max de 30, en plus de ses autres effets. 
+Vous obtenez aussi cette augmentation d’HP si   vous vendez le biscuit pour 5 gold.
+Quant au Biscuit, voici son actif :  Rend 20 HP (+ 1,5% de vos HP max) sur 5 secondes, 
+augmenté de 0 à 100% selon vos HP manquants,   pour un soin maximal de 40 HP (+ 
+3% de vos HP max) sur 5 secondes.  Commençons déjà par les HP max offerts. Vous 
+avez 3 biscuits, pour un total de 90 HP. Ça   représente 240 gold de valeur uniquement en HP.
+C’est déjà plus faible que les runes qu’on a vues   jusque-là. Et pour ce qui est de la régénération 
+du biscuit… eh bien, ça dépend bien sûr de vos   HP max. Mais si vous avez 1000 HP et presque 
+plus de vie, ça vous soignera d’environ 70 HP…  Et honnêtement, de toutes les runes qu’on a vues 
+jusqu’ici, c’est la plus faible, et de très loin.   Sa régénération est lente, et même avec 1000 
+HP, ce qui est déjà pas mal en début de partie,   70 HP c’est ridicule. Une potion rechargeable, 
+c’est 100 HP par charge, donc 200 HP au total. On   est presque déjà au niveau des 3 biscuits en même 
+temps, pris dans le meilleur scénario possible.  Je pense que vous l’avez compris, 
+cette rune est vraiment très faible.   Certes, elle est facile à utiliser. Mais on 
+est à des années-lumière de l’utilité ou de la   puissance des autres runes. Avant le premier 
+back, ça peut éventuellement représenter un   investissement correct. Mais une fois ce premier 
+back passé, surtout avec la prise probable d’une   potion rechargeable, ça devient dérisoire, 
+encore plus si vous avez opté pour le Filtre.  En bref, très faible. Elle est au mieux 
+correcte au tout premier back, sans pour   autant être broken. Je ne vous conseille 
+pas de la prendre dans son état actuel.  Très bien. Finissons maintenant avec l’arbre 
+d’Inspiration et les trois dernières runes, en   commençant par Savoir cosmique ou Comic Insight :
+Passif : Vous gagnez 18 d’accélération des sorts   d’invocateur et 10 d’accélération d’objet.
+Bon. Lui, c’est un alien. Pas   besoin d’essayer de le quantifier.
+En revanche, il est capital de comprendre comment   fonctionne l’accélération de compétence, et pour 
+ça je vous renvoie vers un short à ce sujet.  Mais pour faire simple : 1 point d’accélération, 
+c’est 1% de récupération en plus.   Donc si vous avez 100 d’accélération, 
+l’élément récupère 100% plus vite,   ce qui correspond à 50% de réduction de cooldown.
+En sachant ça, avec 18 d’accélération de sort   d’invocateur et 10 d’accélération 
+d’objet, vos objets courts ont 110%   d’efficacité et vos sorts d’invocateur ont… 100%.
+La différence ici est simple quand un élément est   trop long pour être utilisé deux fois dans un 
+seul combat, alors l’accélération n’augmente   plus son efficacité dans le combat lui-même, mais 
+seulement sa fréquence d’utilisation sur la durée.  Je ne vais pas trop m’étaler là-dessus, sinon ce 
+serait beaucoup trop long. Mais l’idée est simple,   grâce à cette rune, vous avez plus souvent 
+vos sorts d’invocateur et vos objets à longs   cooldowns. Et vos objets à court cooldown, 
+comme l’Éclipse, le Désespoir infini, etc.,   gagnent eux directement en efficacité.
+Autrement dit, pour optimiser cette rune,   vous devez soit avoir des objets à cooldown 
+court pour vraiment l’exploiter, soit avoir des   sorts d’invocateur ou des objets à long cooldown 
+que vous devez récupérer le plus vite possible.  On peut citer Kennen, par exemple, qui 
+apprécie énormément d’avoir son Flash et   son Zhonya rapidement. Même si ça n’augmente pas 
+leur efficacité en combat, ce n’est pas grave,   la fréquence suffit déjà à justifier la rune.
+Mais également, un Sion avec Désespoir infini   et Hydre titanesque pourrait 
+lui aussi bien l’utiliser.  Maintenant, si vous voulez mon avis, c’est 
+l’une des runes les plus surcotées du jeu.   Même avec cette explication, vous pourriez croire 
+qu’elle est forte. Mais au final, ça ne reste que   18 et 10 d’accélération. C’est très peu.
+Cette rune est souvent prise par défaut,   et c’est une erreur. Elle doit être choisie quand 
+vous savez précisément que vous allez pouvoir   l’optimiser au maximum. Dans ce cas-là, elle 
+peut être vraiment forte. Mais en dehors de ça,   ça dépend beaucoup trop de la manière 
+dont vous jouez, et de votre champion.  Passons à Vitesse d’approche, 
+ou Approach Velocity :  Passif : Vous gagnez 7,5% de 
+vitesse de déplacement totale   bonus lorsque vous faites face à des champions 
+ennemis visibles qui sont immobilisés, cloués au   sol ou ralentis dans un rayon de 1000.
+Ce bonus est doublé à 15%, n’a plus de limite   de portée et ne nécessite plus de vision envers 
+les champions ennemis dont vous avez entravé   les déplacements tant qu’ils étaient visibles.
+Alors, cette rune demande une petite précision.   La première partie est assez claire, mais je 
+vais vous donner un exemple pour la seconde.  Si vous jouez Ashe et que vous touchez 
+votre ultime sur une cible visible,   alors pendant toute la durée du stun vous vous 
+déplacerez 15% plus vite vers la cible touchée,   peu importe sa distance. Très pratique 
+pour rattraper une cible éloignée.  Et bien entendu, je n’ai pas choisi Ashe 
+par hasard. Elle est l’une des meilleures   utilisatrices de cette rune extrêmement puissante.
+Pourquoi puissante ? Parce que ce bonus   de vitesse de déplacement est total. 
+C’est-à-dire qu’il englobe tous vos autres bonus,   qu’ils soient flats, comme les bottes, ou 
+en pourcentage, comme un Danseur fantôme.  Autrement dit, le 7,5% ou le 15% ici ne 
+doit surtout pas être comparé naïvement   à celui des objets ou de la plupart des kits de 
+champions. Ce bonus-là est vraiment très puissant,   et il le devient encore plus si vous avez déjà 
+d’autres sources de vitesse de déplacement.  Pour cette raison, cette rune n’est pas vraiment 
+quantifiable en gold. Cependant, d’après le wiki,   parce que moi j’ai la flemme de recalculer ça, 
+1% de vitesse de déplacement vaut 65,105 gold,   et ça c’est pour un bonus qui n’est pas 
+total. Alors imaginez la valeur de cette rune.  Même en la sous-estimant, on est au grand minimum 
+à 488 gold de valeur. Elle ne peut pas descendre   plus bas. Et plus vous avez déjà de vitesse 
+de déplacement, plus cette valeur augmente.  De tout l’arbre, c’est à ce stade la 
+rune la plus puissante qu’on ait vue.  La vitesse de déplacement est une statistique 
+universelle. Elle est utile sur tous les   champions. Même si elle ne fonctionne que vers les 
+ennemis, ce qui peut parfois être contraignant,   ça ne l’empêche pas d’être surpuissante. Je 
+suis persuadé que vous avez déjà vu une Ashe,   un Olaf ou même un Sion utiliser cette rune.
+Mon avis, c’est que si vous avez un ralentissement   réellement utile pour engager, et que vous 
+avez besoin de vitesse de déplacement,   alors prenez-la. Un Nasus, par exemple, dans 
+la majorité des cas ce serait probablement   de trop. Mais dès que vous cochez les bonnes 
+cases, cette rune devient extrêmement forte.  Finissons avec Polyvalence, 
+ou Jack of All Trades :  Passif : Vous gagnez 1 cumul de Jackpot 
+pour chaque type de statistique unique   actuellement accordé par vos objets.
+Jackpot : Pour chaque cumul de Jackpot, vous   gagnez 1 d’accélération de compétence. À 5 cumuls, 
+vous gagnez 6 d’AD bonus ou 10 d’AP (adaptatif).   À 10 cumuls, vous gagnez 9 d’AD bonus ou 15 
+d’AP bonus supplémentaires, pour un total   de 15 d’AD bonus ou 25 d’AP bonus à 10 cumuls.
+Alors, cette rune est spéciale. Et honnêtement,   j’en ai marre de la voir.
+Déjà, on peut la quantifier.  À 3 cumuls, la rune donne simplement 
+3 d’accélération de compétence.  Comme 1 d’accélération de compétence vaut 
+50 gold, on est sur 3 × 50 = 150 gold.  À 5 cumuls, on a 5 d’accélération de 
+compétence, donc 5 × 50 = 250 gold.  Ensuite, la rune donne soit 6 d’AD, soit 10 d’AP.
+Pour un champion AD : 6 × 35 = 210 gold.  Donc au total, 250 + 210 = 460 gold.
+Pour un champion AP : 10 × 20 = 200 gold.  Donc au total, 250 + 200 = 450 gold.
+Et à 10 cumuls, on a 10 d’accélération   de compétence, donc 10 × 50 = 500 gold.
+La rune donne aussi, au total, 15 d’AD ou 25 d’AP.  Pour l’AD : 15 × 35 = 525 gold.
+Donc 500 + 525 = 1025 gold.  Pour l’AP : 25 × 20 = 500 gold.
+Donc 500 + 500 = 1000 gold.  Alors oui, ça donne énormément de gold. Cette 
+rune a vraiment le potentiel d’être la plus   puissante de tout l’arbre, ça ne fait aucun doute, 
+surtout avec des statistiques aussi pertinentes.  Mais, et c’est précisément pour 
+ça que je ne me jette pas dessus,   c’est une rune très mal utilisée.
+Je ne peux pas tout vous démontrer ici,   ce serait trop long, mais il vaudra toujours 
+mieux prendre une statistique extrêmement   pertinente qui n’active pas Polyvalence, 
+plutôt qu’une statistique médiocre juste   pour aller chercher un seul cumul.
+Prenez Darius, par exemple. Vous allez   naturellement prendre de l’AD, de l’accélération, 
+de l’armure, de la résistance magique, des HP.   Rien qu’avec ça, vous avez déjà 5 cumuls. On 
+peut aussi ajouter la vitesse de déplacement,   peut-être la ténacité, la régénération 
+d’HP, voire la vitesse d’attaque.  Et là, ça peut devenir tentant d’aller chercher 
+une dernière statistique comme de l’omnivamp   ou de la létalité. Mais ce ne serait pas 
+optimal. Le gain en gold ne compenserait   pas la perte de pertinence de la statistique.
+Le mieux, c’est encore de jouer un champion   naturellement très versatile, comme Mordekaiser, 
+qui peut atteindre les 10 cumuls sans le moindre   problème. Sur lui, ou sur n’importe quel 
+champion dans ce cas, la rune peut vraiment   briller, parce que 1000 gold pour une rune 
+secondaire, ce n’est pas négligeable du tout.  Cela dit, je tiens à souligner qu’une 
+rune comme Remise immédiate peut très   bien dépasser sa valeur. Polyvalence demande 
+déjà d’avoir acheté un certain nombre d’objets,   donc son powerspike arrive tard, et 
+son impact pratique s’en trouve réduit.  Mon avis, c’est que c’est une très bonne 
+rune sur un champion qui est certain de   la proc à un moment donné. Le fait qu’elle 
+soit orientée fin de partie n’est pas gênant.   Elle reste utile dès le début et ne demande aucun 
+changement si vous savez ce que vous faites.  L’important ici, c’est de ne pas tomber dans le 
+piège, ce sont vos runes qui doivent s’adapter à   vos builds et à votre style de jeu, pas l’inverse.
+Bien. Nous venons donc de voir toutes les runes   de l’arbre d’Inspiration. Vous devez normalement 
+avoir compris l’essentiel. Passons maintenant à la   dernière partie de la vidéo, la mise en situation, 
+pour voir comment appliquer directement ces   réflexions sur un champion.
+Je vais faire les runes de   plusieurs champions pour vous montrer comment 
+les éléments qu’on a établies sont utiles.  Pour ce faire, je vais prendre 3 
+exemples : Xerath, Kayle et Talon.  Commençons donc par les runes de Xerath. 
+Normalement, lui, il se joue très souvent   avec Comet par rapport au slow avec le W. 
+Ici, on va faire exception et on va partir   uniquement sur l’Arbre d'Inspiration pour le 
+moment. Vous vous doutez bien que Glacial,   c'est pas top. La réduction de dégâts, 
+c'est sympa mais le slow, pas tant.   Grimoire, on a vu que c'était viable sur quasiment 
+tout le monde mais plutôt faible. Par défaut,   je partirai sur premier coup parce qu'il sera très 
+facile à proc. Je peux mettre tous mes dégâts en 3   secondes sans souci, à part pour mon ultime. Et 
+même si je suis un range, c'est pas trop grave.   Dans la mesure où de toute façon, la majorité 
+des ranges sont les meilleurs utilisateurs   de premier coup, même avec un pourcentage 
+plus bas. Donc, partons sur premier coup.   Ensuite, là, j'ai le choix entre Flash Hextech et 
+les chaussures magiques, ainsi que cash back. Bon,   concrètement, je vais pas faire des plays de fou 
+furieux avec le flash Hextech avec Xerath. Si vous   voulez en faire, allez-y, je vous en prie. Mais 
+moi, je vais plutôt partir sur remise immédiate.   Pour la bonne et simple raison que, déjà, elles 
+vont dépasser, comme on a vu, la valeur au bout   de deux items légendaires. Et que ça va continuer 
+après. Et aussi parce que de toute façon, j'aurais   pas beaucoup d'utilité pour essayer de snowball en 
+early avec Xerath. Et j'ai beaucoup plus visé le   mid late game que l'early. Alors maintenant, ça 
+devient un choix un peu plus intéressant. Déjà,   j’ai le choix des cookies, qui va être le 
+premier écarté. Parce que niveau 1, en somme,   je peux le gérer sans mourir. Je suis quand même 
+Xerath, j'ai une grande portée, je suis pas trop à   risque. Et les HP max n'auront pas trop de valeur 
+que ça sur moi. Donc franchement, je peux déjà les   écarté. Là, j'aurais le choix aussi avec triple 
+tonic. Donc je pourrais essayer de jouer le niveau   6 avec Xerath, c'est faisable. Mais le soucis, 
+c'est que je suis pas sûr de pouvoir préparer   l'ennemi à l'avance. Et quand même, je peux pas 
+forcer mes dégâts comme un Talon, comme un Fizz,   comme une Diana. Si je rate, je rate. Si le 
+mec est pas à portée de kills, de toute façon,   ça servira à rien, etc. Donc là, triple tonic 
+est beaucoup, beaucoup trop volatile. Et donc,   par défaut, je vais partir sur le filtre. Qui, de 
+toute façon, permettra d'avoir une bonne tenue de   lane après le premier back. Et enfin, nous voici 
+sur les trois dernières runes. Alors la première,   Savoir Cosmique, elle peut être intéressante. 
+J'ai accès au Zhonya, j'ai accès au Luden,   et pas grand chose d'autre. Je vais pas forcément 
+prendre Protobelt sur Xerath. Mais bon, c'est   une situation assez moyenne. Les objets sont cool. 
+Les sorts d’invocateur aussi. Mais là où ça me   pose un peu plus de soucis, c'est que mon flash, 
+je vais pas l'utiliser un CD comme un Kennen, qui   l'attend. Mon flash, est plus là pour me sauver 
+que vraiment d'appliquer un bon play. C'est-à-dire   que le moment où je vais l'utiliser, ça dépend 
+pas vraiment de moi, en fait. Donc je vais pas   forcément partir sur Savoir Cosmique, parce 
+que c'est pas top niveau optimisation. Vitesse   d'approche, ça pourrait être super. La vitesse 
+de déplacement, comme je vous ai dit, c'est   toujours parfait. Mais là, étant donné que c'est 
+vers le champion ennemi, avec Xerath, j'ai pas   forcément besoin d'aller vers les ennemis. J’ai 
+besoin de m'échapper. Donc vitesse d'approche,   c'est pas vraiment optimisé. Et pour polyvalence, 
+là, ça serait déjà plutôt pas mal. Les 5 effets,   je les ai vraiment automatiquement. Donc déjà, 
+on sait que la valeur en gold est plutôt pas   mal. Je peux les avoir assez vite, avec genre 
+l'accélération de compétences, la pénétration   magique, l'AP, le mana, etc. Je pourrais vraiment 
+l'obtenir plutôt rapidement. Donc ça me paraît un   bon choix. Après, pour l'avoir au max, je vais 
+avoir du mal. Mais vu que Savoir Cosmique, c'est   un peu trop volatile, ça dépend pas de moi. Et que 
+vitesse d'approche, c'est pas du tout optimal. Je   pense que polyvalence sera donc mon meilleur 
+choix pour l'instant. Voilà. Donc là déjà,   on a vu Xerath. Passons maintenant à Kayle. Kayle, 
+c'est déjà un peu plus particulier. Parce que bon,   je pourrais utiliser Grimoire, mais comme je 
+vous l'ai dit plus tôt, c'est pas optimal. Elle a   plusieurs d'autres runes qui sont bien meilleures 
+que celle-là. Donc l’arbre d’inspiration sera   secondaire pour elle. Cependant, il reste toujours 
+très important. On va voir ce qu'on peut prendre   avec elle. Déjà, je vais faire le tour des runes 
+qui sont vraiment inférieures avec Kayle. J'aurais   clairement les Chaussures Magiques, le Flash 
+Hextech, Triple Tonic, et le reste pourrait   encore être viable. Maintenant, on va essayer de 
+trouver les plus puissants. Alors déjà, on sait   que les deux runes les plus puissantes, voir même 
+trois, ça serait Polyvalence, Vitesse d'approche,   et Remise immédiate. Remise immédiate et 
+polyvalence vous apportent le plus grand nombre de   statistiques possibles. Avec Kayle, si vous partez 
+par exemple sur un Pistolame Hextech, avec en plus   de ça de l'Attack Speed, de l'AP, etc., on pouvait 
+très facilement atteindre les 10 sans aucun souci.   C'est un hybride, Kayle. Elle peut se jouer les 
+deux même si AP sera votre base. En sachant ça,   on sait déjà que les games seront sécurisés par 
+polyvalence. Cependant, Remise immédiate fait la   même chose et permet d'éviter de prendre forcément 
+Pistolame Hextech ou éventuellement un autre item   qui serait un peu plus complémentaire pour essayer 
+de chercher les 10 cumules, comme une sorte de   Zhonya ou un Masque Abyssal, qui pourrait essayer 
+d'apporter les derniers cumules qui nous manquent.   Quant à Vitesse d'approche, ça sera vraiment 
+très aggro avec le Q, mais c'est parfaitement   faisable avec Kayle. Mais j'ai peur qu'en fin de 
+partie, ce soit un peu too much. Kayle est très   très rapide en fin de partie. Et très souvent, le 
+ralentissement du Q suffit amplement à rattraper   qui vous voulez. Donc déjà, d'office, j'ai envie 
+de partir sur Remise immédiate et polyvalence.   Car là, clairement, ce sont les deux runes qui se 
+démarquent en termes de puissance et de pertinence   sur Kayle. Maintenant, j'ai aussi d'autres 
+choix. J'ai le filtre de Chronodistortion,   qui peut m'aider sur une lane qui est compliquée 
+sur vraiment toute la durée de la lane. Pour le   premier back, je prendrai une potion rechargeable 
+et ça me permettra de sustain un peu mieux avec ce   filtre au fil de la partie. Soit, si jamais 
+le niveau 1 est vraiment vraiment très très   compliqué, livraison de biscuits peut me sauver. 
+Mais honnêtement, les HP, c'est encore dommage sur   Kayle. Et en plus de ça, Kayle n'a pas forcément 
+un si mauvais level 1 que ça. Elle peut battre pas   mal de champions. Donc livraison de biscuits, 
+dans le doute, ça passera derrière le filtre   encore une fois sur Kayle. Quant à Triple Tonique, 
+c'est clairement derrière. Je vais pas chercher un   kill au niveau 6, même si je peux, mais c'est 
+pas vraiment l'utilité d'une Kayle. Et Savoir   Cosmique, pareil, c'est un peu faible. Et c'est 
+un entre-deux étrange, entre Xerath qui l'utilise   quand l'ennemi l'attaque et un Kennen qui peut 
+engager. Kayle, elle peut en somme faire les deux,   mais encore une fois, ça reste assez flou, bien 
+qu'elle ait encore accès à plusieurs items et   des actifs. Donc, pourquoi pas, mais on sait que 
+c’est derrière polyvalence et remise immédiate,   de toute façon en termes de puissance. 
+Donc, si ces deux-là sont très pertinents,   ça sera impossible de les détrôner. Passons 
+maintenant à Talon. Alors Talon, lui,   il est dans un cas un peu plus similaire à Kayle, 
+dans le sens où sa rune principale viendrait d'un   autre arbre. Premier coup est parfaitement viable 
+si vous êtes suffisamment doué pour le proc. Moi,   en l'occurrence, je le suis pas et je n'essaye 
+pas de jouer autour. Moi, je préfère largement   Electrocute pour le early game et aussi sa 
+polyvalence, qui est beaucoup plus simple à proc   que First Strike dans la majorité des scénarios. 
+Donc encore une fois, sur Talon, on va partir sur   l'arbre d'inspiration en arbre secondaire. 
+Avec ça en tête, toujours, les meilleures   runes sont remises immédiates, polyvalence 
+et vitesse d'approche. Le souci avec Talon,   c'est que c'est l'inverse complet de Kayle. Lui, 
+on aime bien snowball vraiment rapidement avec lui   et obtenir un maximum de gold et de puissance 
+pour nous aider. Donc lui, déjà, quelles sont   les runes qui sont assez puissantes et qui nous 
+aident en early ? Il y en a plusieurs. Déjà, on a   livraison de biscuits, encore une fois, mais c'est 
+très défensif. On a bien évidemment les chaussures   magiques qui passent devant en remise immédiate 
+dans le cas où vous voulez snowball en début de   partie. Et vous avez également Triple Tonique, qui 
+vous donne un énorme avantage au niveau 6. Avec ça   en tête, on a déjà deux bons candidats. On a vu 
+que chaussures magiques et Triple Tonique sont   de très bonnes runes. Triple Tonique à condition 
+que vous arrivez à utiliser votre niveau 6. Talon,   c'est assez facile de forcer au niveau 6. 
+Talon est prévu pour avoir une engage quasiment   gratuite. Et en admettant que vous gardez votre 
+flash, cette engage-là, elle SERA gratuite. Donc   l'avantage de l'Élixir de force, vous allez 
+pouvoir le choper très vite. Et Talon est   réputé au mid pour pouvoir vraiment OS quelqu'un 
+assez facilement. Donc Triple Tonique, même s'il   n'est pas encore certain, il a quand même de 
+grandes chances d'être utile. Donc admettons   que Triple Tonique soit notre rune principale. 
+Du coup, est-ce qu'il y en a d'autres qui peuvent   faire concurrence à chaussures magiques ? Biscuit, 
+on a vu que ça peut, mais franchement au niveau 1,   je n'ai pas trop m'inquiété. Le Flash Hextech 
+sur Talon, je pense que vous pouvez voir   pourquoi c'est probablement l’un des champions le 
+moins pertinent avec. Remise Immédiate derrière   chaussure magique, donc lui, il est hors sujet. Le 
+Filtre, il peut être cool sur une lane compliquée.   Honnêtement, ce n'est pas trop dans le style de 
+Talon. Il aime bien prendre soit un énorme trade,   soit de roam, donc il n'est pas vraiment là pour 
+tenir la lane. Donc le Filtre, il est un peu plus   faible que d'habitude. Savoir Cosmique, là par 
+contre, il est vraiment bien, parce que beaucoup   d'items peuvent être des actifs qui peuvent être 
+réduits par ça, comme la Youmuu par exemple. Et   également, Talon fait partie des champions qui 
+utilisent leur Flash surtout pour engager. Donc   dès que vous l'avez, grâce à Savoir Cosmique à 
+l'avance, vous pouvez directement l'utiliser,   et grâce à cette rune, vous pourrez le faire 
+plus souvent. Donc Savoir Cosmique aussi est   très pertinent ici. Vitesse d'approche, on peut le 
+retirer, Talon n'a pas besoin de ça pour venir à   côté des ennemis. Et Polyvalence est cool, mais le 
+problème c'est que ça arrive un peu trop tard. Son   effet est plus tôt que les chaussures magiques, 
+mais une fois que les chaussures magiques sont   arrivées, il est plus faible. Tout simplement, car 
+Talon n'aura pas assez de statistiques différentes   pour rentabiliser tous les effets possibles. Donc 
+chaussures magiques passent devant Polyvalence,   et devant toutes les autres 
+runes, sauf Triple Tonique.  Bon, voilà, la vidéo est terminée, c’est toujours 
+un sacré travail d’analyser toutes ces runes,   mais je suis toujours content de le faire, 
+c’est au final quelque chose qui impact   tellement de monde, bien plus qu’un simple objet, 
+j’espère sincèrement que ça vous sera utile !  En attendant, j’espère que la vidéo vous a plu !
+N’hésitez pas à laisser un like, ça m’aide   énormément, et à vous abonner si vous voulez 
+être notifié des prochaines analyses. Vous   pouvez aussi partager la vidéo à vos amis qui 
+cherchent encore leurs runes sur des sites.  Merci à toutes et à tous d’avoir suivi jusqu’ici, 
+et on se retrouve très bientôt pour un nouveau   sujet sur League of Legends.
+D’ici là, bon climb à vous !

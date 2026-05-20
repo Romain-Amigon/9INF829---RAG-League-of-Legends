@@ -1,0 +1,5 @@
+Title: Summoner Spell Tracker  [APP] for League of Legends
+URL: https://www.youtube.com/watch?v=BnVSHSVZCD4
+
+Content:
+Hello, guys this is my application for League of Legends. It's called "Summoner Tracker for LoL". I'll present you the app a little bit. First I'll show you the how the app looks like in the Play Store. There is a change log with every new version and updates. And here is the Description : " With "Summoner Tracker for LoL" you can track enemy summoner spell in lane. Now let's go back to the app itself. Here is the all summoners spell in the game with the corresponding cooldown timers take from League of Legends database. There is also a option to check "CDR boots and Insight mastery  from the game " and both. And the app will calculated for you the timers at the same time If you like the application you can download it from the link below. GG, WP !  
