@@ -103,16 +103,17 @@ class Nodes:
         initial_question = state.get("current_question", "")
         last_response = history[-1].content if hasattr(history[-1], 'content') else str(history[-1])
         
-        prompt_critique = f"""You are a strict critic of League of Legends advice. Evaluate this response based on:
-1. Relevance to the question
-2. Clarity and accuracy
+        prompt_critique = f"""You are a simple validation filter, NOT a fact-checker. 
+
+Evaluate the RESPONSE based ONLY on these rules:
+1. Assume all data in the RESPONSE is 100% correct (it comes from a private RAG database). If it mentions "Ambessa" or any other name, accept it as true. Do not fact-check.
+2. Accept partial answers. If it gives a strategy without a champion, or a champion without a strategy, it is VALID.
+3. Reject (❌) ONLY if the response completely ignores the topic.
 
 QUESTION: {initial_question}
 RESPONSE: {last_response}
 
-VERDICT (single line):
-- ✅ if the response is VALID and answers the question.
-- ❌ if the response is INCOMPLETE or VAGUE."""
+VERDICT: You MUST output exactly ONE character first: ✅ if valid, or ❌ if rejected. You can add a 5-word maximum explanation after."""
         
         try:
             critique = self.llm.complete(prompt_critique)
@@ -133,7 +134,6 @@ VERDICT (single line):
                 "messages": [f"❌ Critical error: {str(e)}"],
                 "next_step": "end"
             }
-
 def create_graph(llm, retriever):
     workflow = StateGraph(AgentState)
     nodes = Nodes(llm=llm, retriever=retriever)
@@ -169,8 +169,13 @@ def setup_llm():
 
 def setup_retriever(data_dir="../../data/rag", persist_dir="../../data/rag/vectors"):
     Settings.embed_model = HuggingFaceEmbedding(
-        model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+        model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+        device="cpu"
     )
+    
+    Settings.chunk_size = 512
+    Settings.chunk_overlap = 50
+
     if not os.path.exists(persist_dir):
         documents = SimpleDirectoryReader(data_dir).load_data()
         index = VectorStoreIndex.from_documents(documents)

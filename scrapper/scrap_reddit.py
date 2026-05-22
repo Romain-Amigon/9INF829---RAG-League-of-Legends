@@ -3,7 +3,7 @@ import json
 import time
 
 # 1. Configuration initiale
-for mot_cle in [ "build", " champions"] :
+for mot_cle in [ "champions"] :
     url_recherche = f"https://www.reddit.com/r/summonerschool/search.json?q={mot_cle}&restrict_sr=on&limit=10000" # Limité à 5 pour le test
     
     headers = {

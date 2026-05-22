@@ -13,7 +13,7 @@ for doc in os.listdir('raw'):
             posts = json.load(f)
         
         for i, post in enumerate(posts):
-            chemin_fichier = os.path.join(dossier_rag, f"reddit_matchup_{i}.pdf")
+            chemin_fichier = os.path.join(dossier_rag, f"reddit_{i}.pdf")
             
             pdf = FPDF()
             pdf.add_page()
