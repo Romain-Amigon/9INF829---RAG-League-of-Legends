@@ -1,1 +1,3 @@
 .venv
+src/data/rag/vectors/
+.env
