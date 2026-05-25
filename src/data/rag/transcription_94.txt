@@ -1,5 +1,141 @@
-Title: First Impressions: Season 4 Summoner Spell Changes - impaKt Support Guides
-URL: https://www.youtube.com/watch?v=d2DekHSZD78
+Title: GUIDE AHRI FR - COMBOS, TIPS, GESTION DE LANE
+URL: https://www.youtube.com/watch?v=dwNPMg-nQgY
 
 Content:
-[Music] hey guys I'm back here in this video I'll be talking about the upcoming semar spell changes in season 4 I think Riot has done a phenomenal job of balancing out semar spells and everyone will have a lot more options at your disposal from here on out first I'll give you a rundown of the spell changes and then I'll analyze what it may mean for current and future support players as well ghosts cool down now decrease as time goes on and instead of giving you a flat percentage of movement speed increase it now multiplies your movement speed so for instance if you have movement speed increasing items runes or masteries your ghost will speed you up even further it will also give you 75% multiplicative movement speed in the first second of its activation this means that ghosts will now skill better into the leg game especially on Champions with Native movement speed Buffs like udor scarner EVN singed and so on taking ghost May indeed be the better option if your intention is to chase down on your targets while flash will probably Remain the crowd favorite for clutch escapes and skillshot dodging like Mal fights or jarvan's ultimates ignite's damage has been rescaled based on game time it also reveals the target for the duration of the spell while it may not sound like much it'll completely change the way ignite is used right now it will no longer be as powerful as it was in early game situations so going for early game cheese or aggression may not be as easy however since it now grants sight of the target there are a few new ways you can actually use it for for example you now know if the enemy who is ignited will die or not or even how he's positioning so you can try going for the killing blow it may also be really helpful against the sorts of Evelyn Champions with stealth mechanics or that can escape easily gone are also the days when exhaust was used to nullify carries completely the attack speed reduction was reduced to 30% from 50% and the movement speed reduction was also rescaled so it actually reduces the enemy's movement speed even further as time goes on while the 30% is still a significant number and it will still hurt the likes of Jackson trir in the top Lan or any non-caster de carry it seems like it is now a more suitable tool for kiting and peeling front lines after ghost I think heel has changed the most first of all it is now a targeted spell if you cast it on yourself you'll Target yourself and your closest Ally the cast range was also increased by 300 points the cooldown was reduced to 180 seconds and it also grants an extra 30% movement speed buff to both targets since it is no longer AOE I don't think it's as good in a team fight as it used to be however it may prove to be even better during the Ling phase I should also point out that this will probably save both the ad carries and the supports life in case of gangs since it also grants movement speed as well as a heal now it may be one of the best options for supports that lack sustain their kits it's also great option for supports that are looking to play the peeling or protector role in team fights teleports cool down has has been reduced when targeting an Allied Building and it was increased when canceled or interrupted teleporting to a tower may not be the best option because you may take longer to reach the team fight but it'll allow you to have your teleport available sooner than before this is why I think that it may become one of the best options when playing against the split Pusher as well however since the cooldown will be longer when you choose to teleport for to a W for instance joining fights for dragon or Baron or even ganking bottom Lane may not be as rewarding using the while laning may also end up in its cancellation so laning against an opponent with crowd control may be one of its main dangers cleanse was also buffed if you successfully cleanse an effect that prevents you from moving you'll now create a shock wave that knocks nearby enemies back it now provides means to not only remove a crowd control effect from you but it may also be used to cancel or interrupt skills like Zach elastic slingshots have you ever noticed the amount of cancels you can pull off with a thrashed fly Yep this can work as something similar while I'm a huge fan of knockups and knockbacks I can help but think what Vin players will be able to pull off now that they have an extra disengaging tool at their disposal boys this list long surprise Smite has also been changed its cool down was actually reduced to 40 seconds and it now deals less damage in early character levels but it'll deal the same damage at level 18 why you may ask I'm thinking the lower cooldown on Smite actually helps Champions that need it more often in order to maintain a good clear speed thus resulting in in a greater champion pool available to every jungler this may also change the Dynamics of dragon and bar fights or even counter jungling believe it or not back in season 1 it was actually quite normal to see jungle Evelyn take revive however it slowly DED out and stopped being used in suers Rift from season 2 onwards this actually LED Riot to remove the sumers spell from the suers rift entirely Mak it it at the minion only option Clarity was also considered one of the most underwhelming spells in sar's Rift so it is now a howling Abyss only option as I was writing the script for this video I was thinking to myself there are a lot of decent options here and I do think that rat has done a great job of making most SAR spells viable if their intention was to open up options to every League of Legends player I think they totally nailed it flash remains untouched and it will probably still be one of the top summmer spell picks however ghost is now a pretty decent alternative to Gap closing and escaping it will however depend on what enemies your playing against time will tell if it's just not too good supports also have a lot of options here flash remains one of the best suer spells to get but heel seems to have hit the sweet spot as well I do think that most supports will still pick flashover ghost but I can see a few situations where ghost may be the better option ignite will probably still be the best choice for kill lines heel will be providing a safer Landing phase and exhaust can also be picked up when facing slippery Champions with the introduction of scrying ARB I feel like clairo point is now somewhat redundant as well you can cast it where you please and it lasts for a longer period of time than Europe it has a short cooldown so if you're looking for some extra Vision over the enemy team you may want to consider taking it as your second Summoner spell however if you do so remember that both your lighning face and team fight utility will be lacking because of it make sure to pick it up when you're absolutely sure you're going to need it and if you like the changes if you think you'll be able to use them in a way that I didn't mention or if you have anything to say at all feel free to use the comment section down below I look forward to hear what you guys have to say about these changes that is all for this episode of First Impressions I know I usually mention my stream at the end of every video but it would mean a lot to me if you guys could follow it and tune in every once in a while it would really help me out I'll leave a link in the description as well maybe I'm even streaming right now as always don't forget to thumbs up to subscribe to my channel and Bas desires Channel and to follow follow me on Facebook and Twitter so good luck have fun and until next video [Music] [Applause] [Music]
+Quels sont les combos intéressants à connaître
+sur Ahri et surtout dans quelles situations utiliser l’un plutôt que l’autre ? Y’a-t-il
+des astuces à savoir sur chaque sort du champion qui peuvent faire la différence en partie
+? Comment gérer sa phase de lane, adapter son playstyle face à tel ou tel matchup,
+les points forts et les points faibles du champion. Ici Chamallow San, master depuis
+la saison 8 et bienvenue dans ce nouvel épisode de l’école des champions sur Ahri. Ce guide
+est un peu particulier puisque pour le réaliser j’ai été accompagné de Frost qui est
+au moment ou je tourne cette vidéo Master 400 LP et fait parti du top 50 Ahri EUW avec
+un solide 58% de winrate à son niveau. D’ailleurs Frost est aussi professeur du salon Ahri sur
+le serveur Discord de la Chamallow Academy donc si tu souhaites lui poser des questions
+après ce guide, notamment sur les runes, les items où des interactions spécifiques
+contre tel ou tel matchup j’te met le lien du serveur Discord en description.
+On commence avec un premier combo qui paye pas de mine mais qui peut faire la différence,
+tu peux utiliser ton R juste après ton E pour cacher le charme, en fait Ahri va passer
+par-dessus ton E et donc le cacher pour mieux le sécuriser.
+Ensuite, lorsque tu utilises ton Z sur un ennemi, les 3 flammes vont avoir une portée
+et il faudra attendre qu’elles soient à portée de l’ennemi pour qu’elles l’attaquent,
+ce qui très compliqué à gérer en partie. Pour éviter ça, mets une auto-attaque sur
+l’ennemi que tu souhaites cibler avant ton Z, comme ça les flammes vont directement
+le ciblé sans avoir à attendre qu’elles tournent, c’est grave utile à savoir.
+Pour continuer avec les combos, j’voudrais parler des sorts flashés, il faut savoir
+que tu peux utiliser ton flash pendant l’animation du A pour avoir un bien meilleur effet de
+surprise. J’en parle à chacune de mes vidéos mais c’est important de le rappeler parce
+que ça peut vraiment faire toute la différence lors d’un trade.
+Ça va être la même chose avec ton E, tu pourras flash pendant l’animation du sort
+pour que ce soit beaucoup plus compliqué pour l’adversaire de le prévoir et donc
+de l’esquiver. Pour ajouter un peu de difficulté, tu pourras faire un R E flashé pour attraper
+un ennemi à très longue portée. Si tu te débrouille bien et que tu flash au bon moment
+tu pourras sécuriser les dégâts de ton R sur ton ennemi.
+D’ailleurs j’avais partagé ce combo sur Twitter avant la sortie de la vidéo, si tu
+veux voir mes analyses de patch, participer aux prochains giveaway ou autre t’as le
+lien de mon Twitter dans la description. Maintenant j’voudrais te présenter 3 combos
+pour mettre des dégâts sur Ahri. Pour le premier combo, utilise ton E et instant ton
+A puis ton R ton Z et une auto-attaque. Ce combo sera le combo a burst du champion, il
+mettra le plus de dégâts en un minimum de temps, mais en contrepartie c’est le combo
+le plus simple à esquiver, donc tu pourras l’utiliser uniquement lors de trap ou si
+l’adversaire est cc et qu’il ne peut pas l’esquiver.
+Ensuite pour le deuxième combo, utilise ton R Z A puis une auto avant de relancer ton
+R, ton E et une autre auto. Y’a 2 choses importantes à notifier sur ce combo, premièrement
+ton R Z A te permet d’arriver à distance de ton ennemi pour lui mettre des dégâts,
+mais le plus important c’est ton second R. Il va te servir dans un premier temps à
+repositionner ton A pour toucher le retour de ton sort mais aussi à réduire la distance
+entre ton adversaire et toi pour sécuriser ton E et donc la suite de ton trade. Disons
+que c’est le combo à faire par défaut sur Ahri parce que c’est le combo le plus
+optimal et le plus safe. Pour le dernier combo, utilise ton R enchaîner
+d’un E A et d’une auto puis réactives ton R avec ton Z et une dernière auto-attaque.
+Ce combo te sera utile pour catch un adversaire à longue portée qui a peut de possibilité
+d’esquiver ton E, dans notre exemple c’est compliqué pour un Viktor de l’esquiver.
+Ça te permettra de catch de loin tout en mettant pas mal de dégâts.
+Pour continuer ce guide on va parler des astuces à savoir sur chaque sort en commençant par
+le Z et y’a 2 choses à savoir dessus. La première c’est que ce sort et très utilise
+pour esquiver des skill shot. La mobilité qu’il t’apporte fera la différence donc
+n’oublies pas de le garder pour ces occasions et de l’utiliser au bon moment lorsque tu
+sais que tu auras quelque chose à esquiver. Ensuite, il faut bien comprendre l’ordre
+de priorité de ton Z. Comme je l’ai dit plus tôt, par défaut ton Z va attaquer la
+cible la plus proche en fonction de la portée de chaque flamme. Si tu mets une auto-attaque
+sur un adversaire, les flammes le focuseront, mais ton Z mettra une priorité plus élevée
+si tu touches un ennemi avec ton E. Autrement dit, si tu mets une auto sur un ennemi et
+un E sur un autre, tant que l’ennemi est charmé, ton Z le focusera en priorité.
+Maintenant pour ton E, c’est très important de savoir qu’il te permet de cancel les
+dashes, n’oublies pas de le garder pour cette utilisation si tu sais que ton adversaire
+peut te dash dessus, comme dans des matchups LeBlanc, Akali et autre, ça fera probablement
+toute la différence. Pour finir avec les astuces, j’en ai plusieurs
+à te dire pour ton R. La première c’est que ce sort de mobilité doit être utiliser
+pour esquiver des skillshots. Ça te fera d’une pierre 2 coups, tu mettras des dégâts
+en te repositionnant et en esquivant le sort adverse.
+Ensuite, ton R peut être très utile pour repositionner ton A lors de fight. Si ton
+adversaire a de la mobilité ou des dashes qui lui permette d’esquiver le retour de
+ton A, utilise ton R pour le repositionner et sécuriser un maximum de dégâts. Tu peux
+aussi le faire avec ton flash si c’est une question de vie ou de mort.
+Ce qui faut bien garder en tête lorsque tu utilises ton R, c’est que tu as 15 secondes
+pour utiliser tes 3 dashes. Autrement dit, comme ton E a un CD niveau 1 de 12 secondes,
+dans tous les cas tu pourras utiliser 2 fois le R E, donc même si tu rates ton premier
+go in, tu auras une deuxième chance dans 12 secondes alors ne gaspille pas tes autres
+dashes parce que tu as raté le premier. Y’a une dernière astuce très tricky sur
+ton R, lorsque tu utilises ton sort, tu as déjà dû remarquer qu’il y a un CD de
+0,5 seconde avant de le réutiliser. Sauf que lorsque tu tues un adversaire, tu récupères
+une âme de champion et une nouvelle activation de ton R. En timant bien l’utilisation de
+ton R juste avant qu’une âme arrive à toi, tu pourras utiliser un second R instantanément
+sans avoir ce CD, et la cerise sur le gâteau c’est que tu pourras utiliser ton A ou ton
+E pendant ce R précisément ce qui est normalement impossible.
+On va terminer ce tuto par la gestion de l’early game, quelle est la philosophie du champion
+en phase de lane, ces points forts et ces points faibles.
+Déjà un point très simple à retenir, surtout en very early, lorsque tu vas faire ton Z,
+les flammes vont s’attaquer en priorité aux creeps qu’elles peuvent last hit, ça
+facilitera ton farm et ça fait plutôt plaisir. D’ailleurs concernant ton Z n’oublies
+pas de l’utiliser pour revenir en lane en sortant de la fontaine. Le gain en vitesse
+de déplacement peut t’éviter de rater un creep, ça fait toujours plaisir.
+Ensuite, il y a déjà une notion de base à avoir dans ta gestion de lane concernant
+ton positionnement. Avec Ahri, ton A qui est ton sort principal est un sort en ligne, donc
+il faut que tu essaie de te positionner de sorte que ton sort touche la vague de creep
+et le champion adverse de sorte de faire une pierre 2 coups. Donc dans un premier temps
+tu dois travailler ça pour créer une ligne avec toi, les creeps et ton adversaire mais
+tu dois aussi travailler la distance avec ton adversaire pour qu’il soit à la limite
+de ton A de sorte qu’il se prenne l’aller et le retour de ton sort en même temps.
+Maintenant qu’on a dit ça, j’voudrais te présenter 2 patterns de gestion de trade,
+un pour les matchups mêlés et un pour les matchups ranges.
+Pour les matchups mêlés, ton but est d’harass un maximum ton adversaire avec ton avantage
+de portée. Je te déconseille d’utiliser ton A parce que généralement comme ton adversaire
+sera dans les creeps tu vas aussi attaquer les creeps adverses et donc push. La conséquence
+de ce push c’est que ton adversaire se retrouvera sous tour et ça sera pas optimale pour le
+poke, au contraire tu veux qu’il reste le plus longtemps au milieu de sa lane pour le
+punir sur chaque creep. Plutôt que d’utiliser ton A, utilise ton combo auto-attaque Z pour
+cibler les dégâts uniquement sur lui à chaque fois qu’il se rapproche pour farm,
+et s’il décide de te trade back, au moment où il te go in utilise ton charme couplé
+avec ton A pour annuler toute contre-attaque de sa part. En gros tu dois garder ton E et
+ton A comme moyen de répondre à une agression adverse, c’est très important de le penser
+comme ça. Maintenant contre un matchup range la philosophie
+de jeu sera différente. Ton but va être de te positionner en dehors de ta vague de
+creep pour forcer ton adversaire à faire un choix, soit il utilise ces sorts pour la
+vague, soit il utilise ces sorts pour te poke. S’il décide d’utiliser ces sorts pour
+te poke, qu’il y arrive ou non, en fonction des CD qu’il a tu peux te dire que ça te
+donne une raison de forcer un trade, et donc tu pourras te permettre de prendre plus de
+risque pour le go in. Sinon si ce n’est pas le cas tu peux utiliser tes sorts pour
+push la wave. S’il utilise ces sorts dans la vague, dans
+ce cas tu pourras utiliser ton A dans la vague en réponse pour matcher les dégâts et pouvoir
+contester la priorité de lane, et en fonction de son positionnement tu peux essayer de le
+poke avec ton A ou ton combo auto Z montré plus tôt.
+Toutes ces explications de pattern de gestion de lane sont étroitement liées à des notions
+macros du jeu comme le wave managment, l’optimisation de back etc… C’est typiquement ce dont
+je parle lors de séance de coaching, peu importe ton classement ou ton rôle, donc
+si ça t’intéresse qu’on développe ta macro j’te met le lien du formulaire d’inscription
+dans la description. Bref ceci étant dit, peu importe ton type
+de matchup, pour avoir un bon effet de surprise pour initier un trade avec ton adversaire
+tu peux utiliser ton Z ou ton R pour last hit des creeps et faire instantanément ton
+E pour toucher ton ennemi derrière ces creeps. Il se sentira en sécurité derrière sa wave
+et ne s’attendra pas à se faire engage. Par contre, si tu utilises ton E pour tenter
+un catch, tu dois bien comprendre que ton E c’est ton assurance vie, lorsque tu ne
+l’as pas tu dois respecter ce timing en adaptant ton positionnement pour ne pas être
+à distance de ton adversaire. Du coup si tu joues contre Ahri retient bien que ça
+peut te laisser une ouverture. Le tuto est certes un peu long mais je pense
+avoir bien détaillé tout ce que je voulais dire, si ça t’a plu et qu’il te permet
+de carry tes games hésites pas à t’abonner et à liker pour carry la chaîne. Si tu as
+des questions n’hésites pas à passer dans le salon Ahri sur serveur Discord, Frost se
+fera un plaisir d’y répondre. J’terminerais cette vidéo par les mots d’un chanteur
+à la voix cassées qui m’a dit, le plus important dans League of Legends ce n’est
+pas le champion, c’est c’que tu en fait !

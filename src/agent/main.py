@@ -12,6 +12,7 @@ from langgraph.checkpoint.memory import MemorySaver
 import logging
 
 from llama_index.llms.ollama import Ollama
+from llama_index.llms.groq import Groq
 from llama_index.core import SimpleDirectoryReader, VectorStoreIndex, StorageContext, load_index_from_storage, Settings
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
@@ -165,8 +166,15 @@ def create_graph(llm, retriever):
     return workflow.compile(checkpointer=memory)
 
 def setup_llm():
-    return Ollama(model="llama3", request_timeout=120.0, temperature=0.0)
-
+    use_groq = os.getenv("USE_GROQ", "false").lower() == "true"
+    
+    if use_groq:
+        logger.info("🚀 Initialisation du modèle via Groq (Cloud)")
+        return Groq(model="llama-3.1-8b-instant", temperature=0.0)
+    else:
+        logger.info("🐢 Initialisation du modèle via Ollama (Local)")
+        return Ollama(model="llama3", request_timeout=120.0, temperature=0.0)
+    
 def setup_retriever(data_dir="../../data/rag", persist_dir="../../data/rag/vectors"):
     Settings.embed_model = HuggingFaceEmbedding(
         model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
