@@ -52,9 +52,9 @@ class Nodes:
             
         iterations = state.get("iteration_count", 0)
 
-        if iterations >= 2:
+        if iterations >= 3:
             return {
-                "messages": ["Je n'ai pas pu générer une réponse satisfaisante. Pouvez-vous reformuler ?"],
+                "messages": ["I was unable to generate a satisfactory response. Could you please rephrase it?"],
                 "next_step": "end",
                 "iteration_count": iterations + 1,
                 "reflections": ["--- FORCED STOP ---\nIteration limit reached."]
@@ -77,10 +77,11 @@ class Nodes:
             conversation_history += f"- {content}\n"
 
         prompt = f"""You are a League of Legends expert assistant.
-        Answer the following question using ONLY the provided context.
+        Answer the following question using the provided context.
+        Provide a detailed answer.
         
         CRITICAL RULES:
-        1. If the context does not contain the answer, say EXACTLY: "Je n'ai pas d'information sur ce sujet dans ma base de données." and nothing else.
+        1. If the context does not contain the answer, say EXACTLY: "I don't have data on this request." and nothing else.
         2. Do NOT guess or hallucinate.
         
         Conversation history:
@@ -112,7 +113,7 @@ class Nodes:
         prompt_critique = f"""You are a validation filter. 
 
 Evaluate the RESPONSE based ONLY on these rules:
-1. If the RESPONSE clearly states that the information is missing from the context (e.g., "Je n'ai pas d'information"), you MUST accept it as valid (✅). This is the correct behavior when data is absent.
+1. If the RESPONSE clearly states that the information is missing from the context (e.g., "I don't have data on this request."), you MUST accept it as valid (✅). This is the correct behavior when data is absent.
 2. Assume all data in the RESPONSE is 100% correct.
 3. Reject (❌) ONLY if the response hallucinates facts not asked or completely ignores the topic.
 
