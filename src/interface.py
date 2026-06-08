@@ -1,14 +1,12 @@
 import streamlit as st
-from agent.main import setup_llm, setup_retriever, create_graph, run
+import asyncio
+import nest_asyncio
+from agent.main import get_response
+
+nest_asyncio.apply()
 
 st.set_page_config(page_title="LoL RAG Assistant", page_icon="🎮")
-
 st.title("League of Legends RAG Assistant")
-
-if "app" not in st.session_state:
-    llm = setup_llm()
-    retriever = setup_retriever(data_dir="data/rag", persist_dir="data/rag/vectors")
-    st.session_state.app = create_graph(llm, retriever)
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -33,7 +31,10 @@ if prompt:
         message_placeholder.markdown("⏳ Analyse en cours...")
         
         try:
-            final_response, final_reflections = run(st.session_state.app, prompt, thread_id="streamlit_session")
+            loop = asyncio.get_event_loop()
+            final_response, final_reflections = loop.run_until_complete(
+                get_response(prompt, thread_id="streamlit_session")
+            )
             
             message_placeholder.markdown(final_response)
             
@@ -49,4 +50,4 @@ if prompt:
             })
             
         except Exception as e:
-            message_placeholder.markdown(f"❌ Erreur lors de l'exécution : {str(e)}")
+            message_placeholder.markdown(f"❌ Execution error: {str(e)}")

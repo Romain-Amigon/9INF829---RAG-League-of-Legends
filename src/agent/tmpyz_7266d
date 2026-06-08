@@ -1,0 +1,111 @@
+import os
+import asyncio
+import logging
+from dotenv import load_dotenv
+from pathlib import Path
+from langgraph.checkpoint.memory import MemorySaver
+from langgraph.prebuilt import create_react_agent
+from langchain_groq import ChatGroq
+from langchain_ollama import ChatOllama
+# Les bons imports pour MCP
+from mcp import ClientSession, StdioServerParameters
+from mcp.client.stdio import stdio_client
+from langchain_mcp_adapters.tools import load_mcp_tools
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+project_root = Path(__file__).resolve().parents[2]
+env_path = project_root / ".env"
+load_dotenv(dotenv_path=env_path)
+
+async def setup_agent():
+    use_groq = os.getenv("USE_GROQ", "false").lower() == "true"
+    
+    if use_groq:
+        logger.info("Initializing model via Groq (Cloud)")
+        llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0.0)
+    else:
+        logger.info("Initializing model via Ollama (Local)")
+        llm = ChatOllama(model="llama3.1", temperature=0.0)
+
+    # Configuration du serveur MCP (pointant vers votre script rag_server.py)
+    import sys
+    import os
+    
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    server_path = os.path.join(current_dir, "rag_server.py")
+    
+    server_params = StdioServerParameters(
+        command=sys.executable,
+        args=[server_path]
+    )
+    # Connexion au serveur MCP et récupération des outils
+    # (Note : On garde la session ouverte pour que l'agent puisse l'utiliser)
+    client_ctx = stdio_client(server_params)
+    read_stream, write_stream = await client_ctx.__aenter__()
+    
+    session_ctx = ClientSession(read_stream, write_stream)
+    session = await session_ctx.__aenter__()
+    
+    await session.initialize()
+    
+    # C'est ici que LangChain convertit l'outil MCP en outil LangChain classique
+    tools = await load_mcp_tools(session)
+
+    memory = MemorySaver()
+    
+    system_prompt = """You are a League of Legends expert assistant.
+    Use the provided tools to search for information in the knowledge base.
+    If the tool returns no information, state clearly: "I don't have data on this request."
+    Do not guess or hallucinate facts."""
+
+    agent_executor = create_react_agent(
+        llm, 
+        tools, 
+        checkpointer=memory, 
+        state_modifier=system_prompt
+    )
+    
+    # On renvoie l'agent, mais aussi les contextes pour pouvoir les fermer proprement plus tard si besoin
+    return agent_executor, session, client_ctx
+
+# Comme setup_agent est maintenant asynchrone, on l'appelle avec asyncio
+def run(app, prompt, thread_id="session_1"):
+    config = {"configurable": {"thread_id": thread_id}}
+    inputs = {"messages": [("user", prompt)]}
+    
+    final_response = "An error occurred."
+    
+    try:
+        # app.invoke reste synchrone, LangGraph gère les outils en arrière-plan
+        output = app.invoke(inputs, config=config)
+        
+        if "messages" in output and len(output["messages"]) > 0:
+            final_response = output["messages"][-1].content
+            
+    except Exception as e:
+        print(f"Execution error: {e}")
+
+    return final_response, []
+
+# --- Exemple de test rapide si vous lancez ce fichier directement ---
+if __name__ == "__main__":
+    async def main():
+        print("Démarrage de l'agent et connexion au serveur MCP...")
+        agent, session, client_ctx = await setup_agent()
+        
+        print("Posez une question (tapez 'exit' pour quitter) :")
+        while True:
+            question = input("> ")
+            if question.lower() in ["exit", "quit"]:
+                break
+                
+            reponse, _ = run(agent, question)
+            print(f"\n🤖 {reponse}\n")
+            
+        # Fermeture propre de la connexion MCP
+        await session_ctx.__aexit__(None, None, None)
+        await client_ctx.__aexit__(None, None, None)
+        
+    asyncio.run(main())
