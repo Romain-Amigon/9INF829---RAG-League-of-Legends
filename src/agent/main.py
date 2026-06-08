@@ -1,20 +1,16 @@
 import os
-import sys
-import pandas as pd
+import asyncio
+import logging
+import traceback
 from dotenv import load_dotenv
 from pathlib import Path
-from typing import Annotated, TypedDict, List, Union
-import time
-
-from langgraph.graph.message import add_messages
-from langgraph.graph import StateGraph, END
 from langgraph.checkpoint.memory import MemorySaver
-import logging
-
-from llama_index.llms.ollama import Ollama
-from llama_index.llms.groq import Groq
-from llama_index.core import SimpleDirectoryReader, VectorStoreIndex, StorageContext, load_index_from_storage, Settings
-from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+from langgraph.prebuilt import create_react_agent
+from langchain_groq import ChatGroq
+from langchain_ollama import ChatOllama
+from mcp import ClientSession
+from mcp.client.sse import sse_client
+from langchain_mcp_adapters.tools import load_mcp_tools
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -23,209 +19,92 @@ project_root = Path(__file__).resolve().parents[2]
 env_path = project_root / ".env"
 load_dotenv(dotenv_path=env_path)
 
-def add_reflections(left: list, right: list) -> list:
-    if left is None:
-        left = []
-    if right is None:
-        right = []
-    return left + right
+global_memory = MemorySaver()
 
-class AgentState(TypedDict):
-    messages: Annotated[List[Union[dict, str]], add_messages]
-    current_question: str
-    iteration_count: int
-    next_step: str
-    reflections: Annotated[List[str], add_reflections]
-
-class Nodes:
-    def __init__(self, llm, retriever):
-        self.llm = llm
-        self.retriever = retriever
-
-    def rag_generation(self, state: AgentState):
-        time.sleep(0.1)
-        
-        history = state["messages"]
-        question = state.get("current_question", "")
-        if not question:
-            question = history[-1].content if hasattr(history[-1], 'content') else str(history[-1])
-            
-        iterations = state.get("iteration_count", 0)
-
-        if iterations >= 3:
-            return {
-                "messages": ["I was unable to generate a satisfactory response. Could you please rephrase it?"],
-                "next_step": "end",
-                "iteration_count": iterations + 1,
-                "reflections": ["--- FORCED STOP ---\nIteration limit reached."]
-            }
-
-        docs = self.retriever.retrieve(question)
-        context = "\n".join([doc.text for doc in docs])
-        
-        feedback = ""
-        if len(history) > 1:
-            last_msg_content = history[-1].content if hasattr(history[-1], 'content') else str(history[-1])
-            if "🔄 REVISION REQUIRED:" in last_msg_content:
-                feedback = f"\nWARNING: Your previous answer was rejected. Improve it based on this feedback:\n{last_msg_content}\n"
-
-        conversation_history = ""
-        for msg in history[:-1]:
-            content = msg.content if hasattr(msg, 'content') else str(msg)
-            if any(marker in content for marker in ["🔄", "✅", "❌", "I could not generate", "Unfortunately", "════", "WARNING:"]):
-                continue
-            conversation_history += f"- {content}\n"
-
-        prompt = f"""You are a League of Legends expert assistant.
-        Answer the following question using the provided context.
-        Provide a detailed answer.
-        
-        CRITICAL RULES:
-        1. If the context does not contain the answer, say EXACTLY: "I don't have data on this request." and nothing else.
-        2. Do NOT guess or hallucinate.
-        
-        Conversation history:
-        {conversation_history}
-        
-        Context:
-        {context}
-        
-        Question: {question}
-        {feedback}
-        
-        Answer clearly and concisely."""
-        
-        response = self.llm.complete(prompt)
-        trace = [f"--- RAG PROMPT ---\n{prompt}", f"--- RAG RESPONSE ---\n{response.text}"]
-        
-        return {
-            "messages": [response.text],
-            "next_step": "debater",
-            "iteration_count": iterations + 1,
-            "reflections": trace
-        }
-
-    def critique_response(self, state: AgentState):
-        history = state["messages"]
-        initial_question = state.get("current_question", "")
-        last_response = history[-1].content if hasattr(history[-1], 'content') else str(history[-1])
-        
-        prompt_critique = f"""You are a validation filter. 
-
-Evaluate the RESPONSE based ONLY on these rules:
-1. If the RESPONSE clearly states that the information is missing from the context (e.g., "I don't have data on this request."), you MUST accept it as valid (✅). This is the correct behavior when data is absent.
-2. Assume all data in the RESPONSE is 100% correct.
-3. Reject (❌) ONLY if the response hallucinates facts not asked or completely ignores the topic.
-
-QUESTION: {initial_question}
-RESPONSE: {last_response}
-
-VERDICT: You MUST output exactly ONE character first: ✅ if valid, or ❌ if rejected. You can add a 5-word maximum explanation after."""
-        
-        try:
-            critique = self.llm.complete(prompt_critique)
-            critique_text = critique.text.strip() if hasattr(critique, 'text') else str(critique).strip()
-            
-            if critique_text.startswith("✅"):
-                return {
-                    "messages": [f"\n═════════════════════════════\n✅ RESPONSE ACCEPTED\n═════════════════════════════\n{last_response}\n\n🗣️ Critique: {critique_text}"],
-                    "next_step": "end"
-                }
-            else:
-                return {
-                    "messages": [f"🔄 REVISION REQUIRED:\n{critique_text}"],
-                    "next_step": "retry"
-                }
-        except Exception as e:
-            return {
-                "messages": [f"❌ Critical error: {str(e)}"],
-                "next_step": "end"
-            }
-        
-        
-def create_graph(llm, retriever):
-    workflow = StateGraph(AgentState)
-    nodes = Nodes(llm=llm, retriever=retriever)
-    
-    workflow.add_node("rag_generation", nodes.rag_generation)
-    workflow.add_node("debater", nodes.critique_response)
-    
-    workflow.set_entry_point("rag_generation")
-    
-    workflow.add_conditional_edges(
-        "rag_generation",
-        lambda state: state["next_step"],
-        {
-            "debater": "debater",
-            "end": END
-        }
-    )
-    
-    workflow.add_conditional_edges(
-        "debater",
-        lambda state: state["next_step"],
-        {
-            "end": END,
-            "retry": "rag_generation"
-        }
-    )
-    
-    memory = MemorySaver()
-    return workflow.compile(checkpointer=memory)
-
-def setup_llm():
+async def get_response(prompt: str, thread_id: str = "session_1"):
     use_groq = os.getenv("USE_GROQ", "false").lower() == "true"
     
     if use_groq:
-        logger.info("🚀 Initialisation du modèle via Groq (Cloud)")
-        return Groq(model="llama-3.1-8b-instant", temperature=0.0)
+        logger.info("Initializing model via Groq (Cloud)")
+        llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0.0)
     else:
-        logger.info("🐢 Initialisation du modèle via Ollama (Local)")
-        return Ollama(model="llama3", request_timeout=120.0, temperature=0.0)
+        logger.info("Initializing model via Ollama (Local)")
+        llm = ChatOllama(model="llama3.1", temperature=0.0)
+
+    url_serveur = "http://localhost:8000/sse"
+    logger.info(f"Connexion au serveur MCP via {url_serveur}...")
     
-def setup_retriever(data_dir="../../data/rag", persist_dir="../../data/rag/vectors"):
-    Settings.embed_model = HuggingFaceEmbedding(
-        model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
-        device="cpu"
-    )
+    final_answer = None
+    reflections = []
     
-    Settings.chunk_size = 512
-    Settings.chunk_overlap = 50
-
-    if not os.path.exists(persist_dir):
-        documents = SimpleDirectoryReader(data_dir).load_data()
-        index = VectorStoreIndex.from_documents(documents)
-        index.storage_context.persist(persist_dir=persist_dir)
-    else:
-        storage_context = StorageContext.from_defaults(persist_dir=persist_dir)
-        index = load_index_from_storage(storage_context)
-        
-    return index.as_retriever(similarity_top_k=7)
-
-def run(app, prompt, thread_id="session_1"):
-    config = {"configurable": {"thread_id": thread_id}}
-    inputs = {
-        "messages": [prompt],
-        "current_question": prompt,
-        "iteration_count": 0
-    }   
-    final_response = "An error occurred."
-    final_reflections = []
-
     try:
-        output = app.invoke(inputs, config=config)
-        
-        if "reflections" in output:
-            final_reflections = output["reflections"]
-        
-        if "messages" in output and len(output["messages"]) > 0:
-            last_msg = output["messages"][-1]
-            if hasattr(last_msg, 'content'):
-                final_response = str(last_msg.content).strip()
-            else:
-                final_response = str(last_msg).strip()
+        async with sse_client(url_serveur, timeout=600.0) as (read_stream, write_stream):
+            async with ClientSession(read_stream, write_stream) as session:
+                await session.initialize()
                 
-    except Exception as e:
-        print(f"❌ Execution error: {e}")
+                tools = await load_mcp_tools(session)
+                
+                system_prompt = """"You are a League of Legends expert assistant.
+                Your primary source of truth is the provided search tool (RAG). Always look for information there first and prioritize its contents.
+                If the tool returns relevant information, use it to build your answer.
+                If the tool returns incomplete, noisy, or no information about the champion or strategy requested, you are allowed to use your own extensive internal knowledge about League of Legends to complement the answer, fill in the blanks, or provide a complete guide.
+                When mixing sources, maintain factual accuracy regarding League of Legends mechanics (spells, items, match-ups).
+                If the tool returns no information, state clearly: 'I don\'t have data on this request.'
+                Do not guess or hallucinate facts."""
 
-    return final_response, final_reflections
+                agent_executor = create_react_agent(
+                    llm, 
+                    tools, 
+                    checkpointer=global_memory, 
+                    prompt=system_prompt
+                )
+                
+                config = {"configurable": {"thread_id": thread_id}}
+                inputs = {"messages": [("user", prompt)]}
+                
+                output = await agent_executor.ainvoke(inputs, config=config)
+                
+                if "messages" in output and len(output["messages"]) > 0:
+                    for msg in output["messages"][1:-1]:
+                        if msg.type == "ai" and msg.tool_calls:
+                            reflections.append(f"🛠️ Appel de l'outil : {msg.tool_calls[0]['name']}")
+                            reflections.append(f"📥 Paramètres : {msg.tool_calls[0]['args']}")
+                        elif msg.type == "tool":
+                            content_preview = msg.content[:300] + "..." if len(msg.content) > 300 else msg.content
+                            reflections.append(f"📄 Résultat RAG :\n{content_preview}")
+
+                    final_answer = output["messages"][-1].content
+                    
+    except Exception as e:
+        is_taskgroup = "TaskGroup" in str(type(e)) or "TaskGroup" in str(e)
+        
+        if is_taskgroup and final_answer is not None:
+            pass
+        else:
+            logger.error(f"CRASH LLM:\n{traceback.format_exc()}")
+            
+            if hasattr(e, 'exceptions'):
+                real_errors = "\n".join([str(sub_e) for sub_e in e.exceptions])
+                final_answer = f"Erreur de modèle :\n{real_errors}"
+            else:
+                final_answer = f"Erreur LLM : {str(e)}"
+                
+    if final_answer is None:
+        final_answer = "Une erreur critique s'est produite."
+
+    return final_answer, reflections
+
+if __name__ == "__main__":
+    async def main():
+        print("Posez une question (tapez 'exit' pour quitter) :")
+        while True:
+            question = input("> ")
+            if question.lower() in ["exit", "quit"]:
+                break
+                
+            reponse, traces = await get_response(question)
+            for t in traces:
+                print(t)
+            print(f"\n🤖 {reponse}\n")
+            
+    asyncio.run(main())
