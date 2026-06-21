@@ -1,0 +1,134 @@
+2026-06-17 20:08:28,247 - [INFO] - ===== RERUN du script =====
+2026-06-17 20:08:28,304 - [INFO] - ===== RERUN du script =====
+2026-06-17 20:08:28,305 - [INFO] - Nombre de messages en session: 0
+2026-06-17 20:08:28,305 - [INFO] - Historique affiche, attente chat_input
+2026-06-17 20:08:28,306 - [INFO] - prompt = None
+2026-06-17 20:08:28,307 - [INFO] - ===== FIN du script (rerun complet sans crash) =====
+2026-06-17 20:08:28,454 - [INFO] - Nombre de messages en session: 0
+2026-06-17 20:08:28,454 - [INFO] - Historique affiche, attente chat_input
+2026-06-17 20:08:28,454 - [INFO] - prompt = None
+2026-06-17 20:08:28,454 - [INFO] - ===== FIN du script (rerun complet sans crash) =====
+2026-06-17 20:08:38,379 - [INFO] - ===== RERUN du script =====
+2026-06-17 20:08:38,380 - [INFO] - Nombre de messages en session: 0
+2026-06-17 20:08:38,381 - [INFO] - Historique affiche, attente chat_input
+2026-06-17 20:08:38,381 - [INFO] - prompt = WHEN TO PLAY BARON ?
+2026-06-17 20:08:38,382 - [INFO] - Bloc if prompt ENTRE
+2026-06-17 20:08:45,207 - [INFO] - import get_response OK
+2026-06-17 20:08:45,211 - [INFO] - Appel run_async...
+2026-06-17 20:08:45,214 - [INFO] - Initialisation du graphe multi-agents...
+2026-06-17 20:08:45,214 - [INFO] - LLM via Ollama (Local)
+2026-06-17 20:08:45,502 - [INFO] - Loading SentenceTransformer model from sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2.
+2026-06-17 20:09:36,929 - [INFO] - Loading all indices.
+2026-06-17 20:09:37,329 - [INFO] - Graph créé (router -> expert -> validator -> [retry|END]) avec checkpointer
+2026-06-17 20:09:37,342 - [INFO] - Graphe prêt.
+2026-06-17 20:09:37,921 - [INFO] - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-17 20:09:39,318 - [INFO] - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-17 20:09:44,539 - [INFO] - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-17 20:09:44,996 - [INFO] - run_async TERMINE OK
+2026-06-17 20:09:45,000 - [INFO] - Reponse sauvegardee, fin du bloc if
+2026-06-17 20:09:45,025 - [INFO] - ===== FIN du script (rerun complet sans crash) =====
+2026-06-17 20:11:16,686 - [INFO] - ===== RERUN du script =====
+2026-06-17 20:11:16,819 - [INFO] - Nombre de messages en session: 0
+2026-06-17 20:11:16,820 - [INFO] - Historique affiche, attente chat_input
+2026-06-17 20:11:16,820 - [INFO] - prompt = None
+2026-06-17 20:11:16,821 - [INFO] - ===== FIN du script (rerun complet sans crash) =====
+2026-06-17 20:11:24,411 - [INFO] - ===== RERUN du script =====
+2026-06-17 20:11:24,412 - [INFO] - Nombre de messages en session: 0
+2026-06-17 20:11:24,413 - [INFO] - Historique affiche, attente chat_input
+2026-06-17 20:11:24,414 - [INFO] - prompt = when to play baron
+2026-06-17 20:11:24,415 - [INFO] - Bloc if prompt ENTRE
+2026-06-17 20:11:31,026 - [INFO] - import get_response OK
+2026-06-17 20:11:31,028 - [INFO] - Appel run_async...
+2026-06-17 20:11:31,030 - [INFO] - Initialisation du graphe multi-agents...
+2026-06-17 20:11:31,030 - [INFO] - LLM via Ollama (Local)
+2026-06-17 20:11:31,302 - [INFO] - Loading SentenceTransformer model from sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2.
+2026-06-17 20:12:22,822 - [INFO] - Loading all indices.
+2026-06-17 20:12:23,234 - [INFO] - Graph créé (router -> expert -> validator -> [retry|END]) avec checkpointer
+2026-06-17 20:12:23,239 - [INFO] - Graphe prêt.
+2026-06-17 20:12:23,862 - [INFO] - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-17 20:12:25,156 - [INFO] - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-17 20:12:32,550 - [INFO] - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-17 20:12:33,314 - [INFO] - run_async TERMINE OK
+2026-06-17 20:12:33,318 - [INFO] - Reponse sauvegardee, fin du bloc if
+2026-06-17 20:12:33,345 - [INFO] - ===== FIN du script (rerun complet sans crash) =====
+2026-06-17 20:13:09,493 - [INFO] - ===== RERUN du script =====
+2026-06-17 20:13:09,494 - [INFO] - Nombre de messages en session: 2
+2026-06-17 20:13:09,498 - [INFO] - Historique affiche, attente chat_input
+2026-06-17 20:13:09,499 - [INFO] - prompt = how to play garen
+2026-06-17 20:13:09,499 - [INFO] - Bloc if prompt ENTRE
+2026-06-17 20:13:09,499 - [INFO] - import get_response OK
+2026-06-17 20:13:09,500 - [INFO] - Appel run_async...
+2026-06-17 20:13:09,506 - [ERROR] - Erreur d'exécution du graphe
+Traceback (most recent call last):
+  File "C:\Users\ramigon\Downloads\9INF829---RAG-League-of-Legends\src\agent\main.py", line 36, in get_response
+    output = await app.ainvoke(inputs, config=config)
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\langgraph\pregel\main.py", line 4057, in ainvoke
+    async for chunk in self.astream(
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\langgraph\pregel\main.py", line 3407, in astream
+    async for _ in runner.atick(
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\langgraph\pregel\_runner.py", line 396, in atick
+    await arun_with_retry(
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\langgraph\pregel\_retry.py", line 706, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\langgraph\_internal\_runnable.py", line 737, in ainvoke
+    input = await step.ainvoke(input, config, **kwargs)
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\langgraph\_internal\_runnable.py", line 501, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+  File "C:\Users\ramigon\Downloads\9INF829---RAG-League-of-Legends\src\agent\nodes.py", line 63, in initial_router
+    response = await self.llm.ainvoke(prompt)
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\langchain_core\language_models\chat_models.py", line 497, in ainvoke
+    llm_result = await self.agenerate_prompt(
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\langchain_core\language_models\chat_models.py", line 1834, in agenerate_prompt
+    return await self.agenerate(
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\langchain_core\language_models\chat_models.py", line 1792, in agenerate
+    raise exceptions[0]
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\langchain_core\language_models\chat_models.py", line 2127, in _agenerate_with_cache
+    result = await self._agenerate(
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\langchain_ollama\chat_models.py", line 1388, in _agenerate
+    final_chunk = await self._achat_stream_with_aggregation(
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\langchain_ollama\chat_models.py", line 1161, in _achat_stream_with_aggregation
+    async for chunk in self._aiterate_over_stream(messages, stop, **kwargs):
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\langchain_ollama\chat_models.py", line 1306, in _aiterate_over_stream
+    async for stream_resp in self._acreate_chat_stream(messages, stop, **kwargs):
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\langchain_ollama\chat_models.py", line 1102, in _acreate_chat_stream
+    async for part in await self._async_client.chat(**chat_params):
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\ollama\_client.py", line 777, in inner
+    async with self._client.stream(*args, **kwargs) as r:
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\contextlib.py", line 199, in __aenter__
+    return await anext(self.gen)
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\httpx\_client.py", line 1583, in stream
+    response = await self.send(
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\httpx\_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\httpx\_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\httpx\_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\httpx\_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\httpx\_transports\default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\httpcore\_async\connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\httpcore\_async\connection_pool.py", line 229, in handle_async_request
+    await self._close_connections(closing)
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\httpcore\_async\connection_pool.py", line 345, in _close_connections
+    await connection.aclose()
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\httpcore\_async\connection.py", line 173, in aclose
+    await self._connection.aclose()
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\httpcore\_async\http11.py", line 258, in aclose
+    await self._network_stream.aclose()
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\httpcore\_backends\anyio.py", line 53, in aclose
+    await self._stream.aclose()
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\site-packages\anyio\_backends\_asyncio.py", line 1329, in aclose
+    self._transport.close()
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\asyncio\proactor_events.py", line 109, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\asyncio\base_events.py", line 753, in call_soon
+    self._check_closed()
+  File "C:\Users\ramigon\.conda\envs\pytorch_gpu\lib\asyncio\base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2026-06-17 20:13:09,746 - [INFO] - run_async TERMINE OK
+2026-06-17 20:13:09,747 - [INFO] - Reponse sauvegardee, fin du bloc if
+2026-06-17 20:13:09,747 - [INFO] - ===== FIN du script (rerun complet sans crash) =====

@@ -1,22 +1,27 @@
-# agent/state.py
-from typing import Annotated, TypedDict, List, Union
+from typing import Annotated, Sequence, TypedDict, List, Dict
+import operator
+from langchain_core.messages import BaseMessage
 from langgraph.graph.message import add_messages
 
-
-
-def add_reflexions(left: list, right: list) -> list:
+def add_list_items(left: list, right: list) -> list:
     if left is None:
         left = []
     if right is None:
         right = []
     return left + right
+
 class AgentState(TypedDict):
-    # add_messages permet d'accumuler l'historique automatiquement
-    messages: Annotated[List[Union[dict, str]], add_messages]
-    # On ajoute des champs pour suivre l'exécution
-    current_code: str
-    last_error: str
-    iteration_count: int
+    messages: Annotated[Sequence[BaseMessage], add_messages]
+    current_question: str
+    search_query: str
+    plan: list[str]
+    sources: List[str]
+    source_contexts: Dict[str, str]
+    context: str
+    draft_response: str
+    traces: Annotated[List[str], add_list_items]
+    errors: Annotated[List[str], add_list_items]
+    rag_persona: str
+    opgg_intent: str
     next_step: str
-    
-    reflexions: Annotated[List[str], add_reflexions]
+    iteration_count: int
