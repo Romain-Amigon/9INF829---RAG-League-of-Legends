@@ -1,8 +1,8 @@
 # League of Legends RAG Assistant
 
-Romain Amigon AMIR14020300   &   Maxime Demarle XXXXXXXXXXXX
+Romain Amigon AMIR14020300   &   Maxime Demarle DEMM29040100
 
-Ce projet implémente un système RAG (Retrieval-Augmented Generation) agentique basé sur l'univers de League of Legends. Il utilise le protocole **MCP (Model Context Protocol)** pour séparer la logique de raisonnement (l'Agent LangGraph) de la base de données vectorielle (LlamaIndex).
+Ce projet implémente un système RAG (Retrieval-Augmented Generation) agentique basé sur l'univers de League of Legends.
 
 ## 📋 Prérequis et Installation
 
@@ -16,9 +16,15 @@ pip install mcp langchain-mcp-adapters langchain-groq langchain-ollama langgraph
 
 ```
 
+ou
+
+```bash
+pip install -r requirements.txt
+```
+
 ## ⚙️ Configuration
 
-Si vous souhaitez utiliszr Groq, créez un fichier `.env` à la racine de votre projet pour configurer le modèle de langage (LLM) que l'agent utilisera. Sinon le projet utilise en natif Ollama
+Si vous souhaitez utiliser Groq, créez un fichier `.env` à la racine de votre projet pour configurer le modèle de langage (LLM) que l'agent utilisera. Sinon le projet utilise en natif Ollama
 
 ```env
 USE_GROQ=true
@@ -70,6 +76,8 @@ streamlit run src/interface.py
 ```
 
 Une fenêtre s'ouvrira dans votre navigateur web. L'assistant IA se connectera silencieusement à la base vectorielle locale et sera prêt à répondre à vos questions sur League of Legends !
+
+!!! Le premier prompt peut prendre beaucoup de temps car c'est le moment où tout est chargé (modele et graphe).
 
 ---
 
